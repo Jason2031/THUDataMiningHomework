@@ -106,7 +106,7 @@ def filter_purchase_record(user_behavior_record):
 def construct_transaction(purchase, transaction_file='data_set/transaction.csv'):
     if transaction_file and os.path.exists(transaction_file):
         return pd.read_csv(transaction_file)
-    groups = purchase.groupby(['time_stamp', 'user_id'])
+    groups = purchase.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
     columns = ['user_id', 'time_stamp', 'items']
     transaction = pd.DataFrame(columns=columns)
     for t in groups:
@@ -136,7 +136,9 @@ def generate_result_string(support_list, rules):
     return '\n'.join(result)
 
 
-def write_to_file(result, destination='data_set/apriori_result.txt'):
+def write_to_file(result, destination='result/apriori_result.txt'):
+    if not os.path.exists('result'):
+        os.makedirs('result')
     with open(destination, 'w') as f:
         f.write(result)
 
@@ -145,7 +147,7 @@ if __name__ == '__main__':
     opt_parser = OptionParser()
     opt_parser.add_option('-f', '--input_file',
                           dest='input',
-                          help='filename containing csv',
+                          help='user behavior record csv',
                           default='data_set/user_log_format_temp.csv')
     opt_parser.add_option('-s', '--min_support',
                           dest='min_support',
