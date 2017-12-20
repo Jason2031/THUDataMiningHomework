@@ -91,20 +91,31 @@ class SOM(object):
             for j in range(width):
                 yield np.array([i, j])
 
-    def train(self, input_vectors):
+    def train_step(self, input_vectors, iter_no):
+        """
+        Trains the SOM one step.
+        :param input_vectors: randomly picked input vectors
+        :param iter_no:
+        :return:
+        """
+        for input_vector in input_vectors:
+            self._sess.run(self._training_op,
+                           feed_dict={self._input_vector: input_vector,
+                                      self._input_iteration_number: iter_no})
+
+    def train(self, input_vectors, batch_size):
         """
         Trains the SOM. Current weight vectors for all neurons (initially random) are taken as starting conditions
         for training.
         :param input_vectors: an iterable of 1-D NumPy arrays with dimensionality as provided during initialization
         of this SOM.
+        :param batch_size: batch size
         """
         # Training iterations
         for iter_no in range(self._n_iterations):
-            # Train with each vector one by one
-            for input_vector in input_vectors:
-                self._sess.run(self._training_op,
-                               feed_dict={self._input_vector: input_vector,
-                                          self._input_iteration_number: iter_no})
+            # Randomly pick a batch from the given input vectors
+            batch = input_vectors[np.random.randint(input_vectors.shape[0], size=batch_size), :]
+            self.train_step(batch, iter_no)
         self._trained = True
 
     def get_centroids(self):
@@ -163,6 +174,7 @@ def construct_user_behavior_array(user_behavior_file):
         if row['item_id'] not in item_map.keys():
             item_map[row['item_id']] = len(item_map)
         output[user_map[row['user_id']]][item_map[row['item_id']]] = row['action_type']
+    np.random.shuffle(output)
     return output
 
 
@@ -194,12 +206,17 @@ if __name__ == '__main__':
                           help='iteration count',
                           default=400,
                           type='int')
+    opt_parser.add_option('-b', '--batch_size',
+                          dest='batch_size',
+                          help='batch size',
+                          default=1024,
+                          type='int')
     (options, args) = opt_parser.parse_args()
 
     user_behavior = construct_user_behavior_array(options.input)
 
     som = SOM(options.som_width, options.som_length, user_behavior[0].size, options.iteration_count)
-    som.train(user_behavior)
+    som.train(user_behavior, options.batch_size)
 
     # Get output grid
     image_grid = som.get_centroids()
