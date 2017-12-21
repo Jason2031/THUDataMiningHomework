@@ -111,8 +111,10 @@ class SOM(object):
         of this SOM.
         :param batch_size: batch size
         """
+        print('Training begins...')
         # Training iterations
         for iter_no in range(self._n_iterations):
+            print('Iter #{}/{}, batch_size: {}'.format(iter_no + 1, self._n_iterations, batch_size))
             # Randomly pick a batch from the given input vectors
             batch = input_vectors[np.random.randint(input_vectors.shape[0], size=batch_size), :]
             self.train_step(batch, iter_no)

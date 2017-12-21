@@ -100,6 +100,7 @@ def filter_purchase_record(user_behavior_record):
     purchase = user_behavior_record[user_behavior_record['action_type'].isin([2])]
     selected = ['user_id', 'item_id', 'time_stamp']
     purchase = purchase.filter(items=selected)
+    print('Finish filtering purchase records, size: {} lines of record.'.format(len(purchase)))
     return purchase.sort_values(by=['time_stamp'])
 
 
@@ -118,6 +119,7 @@ def construct_transaction(purchase, transaction_file='data_set/transaction.csv')
                 'time_stamp': items['time_stamp'].astype('str').values[0]
             }, ignore_index=True)
     transaction.to_csv('data_set/transaction.csv', index=False)
+    print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
     return transaction
 
 
@@ -148,20 +150,29 @@ if __name__ == '__main__':
     opt_parser.add_option('-f', '--input_file',
                           dest='input',
                           help='user behavior record csv',
-                          default='data_set/user_log_format_temp.csv')
+                          default='data_set/user_log_format1.csv')
     opt_parser.add_option('-s', '--min_support',
                           dest='min_support',
                           help='minimum support value',
                           default=3,
-                          type='float')
+                          type='int')
     opt_parser.add_option('-c', '--min_confidence',
                           dest='min_confidence',
                           help='minimum confidence value',
                           default=0.6,
                           type='float')
+    opt_parser.add_option('-t', '--truncate_log_size',
+                          dest='truncate_log_size',
+                          help='truncate log size',
+                          default=1024 * 1024 * 16,
+                          type='int')
     (options, args) = opt_parser.parse_args()
 
     user_behavior = pd.read_csv(options.input)
+    print('Finish reading user behavior file, size: {} lines of record.'.format(len(user_behavior)))
+    user_behavior.sample(frac=1)
+    user_behavior = user_behavior[:options.truncate_log_size]
+    print('Finish shuffling and truncating user behavior record, size: {} lines of record.'.format(len(user_behavior)))
     support_item_list, confidence_rules = run_apriori(user_behavior, options.min_support, options.min_confidence)
     result_string = generate_result_string(support_item_list, confidence_rules)
     print(result_string)
