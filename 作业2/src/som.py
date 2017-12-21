@@ -50,7 +50,7 @@ class SOM(object):
             slice_input = tf.pad(tf.reshape(bmu_index, [1]),
                                  np.array([[0, 1]]))
             bmu_loc = tf.reshape(tf.slice(self._location_vectors, slice_input,
-                                          tf.constant(np.array([1, 2]))), [2])
+                                          tf.constant(np.array([1, 2], dtype=np.int64))), [2])
 
             # To compute the alpha and sigma values based on iteration number
             learning_rate_op = tf.subtract(1.0, tf.div(self._input_iteration_number, self._n_iterations))
