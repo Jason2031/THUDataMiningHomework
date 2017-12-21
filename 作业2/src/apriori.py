@@ -3,13 +3,11 @@ from optparse import OptionParser
 import os
 
 
-def run_apriori(user_behavior_record, min_support, min_confidence):
-    purchase_record = filter_purchase_record(user_behavior_record)
-    transaction = construct_transaction(purchase_record)
-    one_item_list = get_1_item_set(user_behavior_record)
+def run_apriori(transaction, min_support, min_confidence):
     support_list = []
     candidate_item_set_list = []
     frequent_item_set_list = []
+    one_item_list = get_1_item_set(transaction)
     candidate_item_set_list.append(one_item_list)
     support = {tuple([int(item)]): 0 for item in candidate_item_set_list[0]}
     for t in transaction['items']:
@@ -92,8 +90,13 @@ def generate_candidate_item_set(item_list, length):
     return result
 
 
-def get_1_item_set(user_behavior_record):
-    return list(set(user_behavior_record['item_id'].astype('str')))
+def get_1_item_set(transaction):
+    result = set()
+    for t in transaction['items']:
+        items = t.split(',')
+        for item in items:
+            result.add(item)
+    return list(result)
 
 
 def filter_purchase_record(user_behavior_record):
@@ -104,23 +107,35 @@ def filter_purchase_record(user_behavior_record):
     return purchase.sort_values(by=['time_stamp'])
 
 
-def construct_transaction(purchase, transaction_file='data_set/transaction.csv'):
+def construct_transaction(user_behavior_file, truncate_log_size, transaction_file='data/transaction.csv'):
+    user_behavior_record = construct_user_behavior_list(user_behavior_file, truncate_log_size)
+    purchase_record = filter_purchase_record(user_behavior_record)
     if transaction_file and os.path.exists(transaction_file):
-        return pd.read_csv(transaction_file)
-    groups = purchase.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
-    columns = ['user_id', 'time_stamp', 'items']
-    transaction = pd.DataFrame(columns=columns)
-    for t in groups:
-        items = t[1]
-        transaction = transaction.append(
-            {
-                'user_id': items['user_id'].astype('str').values[0],
-                'items': ','.join(items['item_id'].astype('str').values),
-                'time_stamp': items['time_stamp'].astype('str').values[0]
-            }, ignore_index=True)
-    transaction.to_csv('data_set/transaction.csv', index=False)
-    print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
+        transaction = pd.read_csv(transaction_file)
+    else:
+        groups = purchase_record.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
+        columns = ['user_id', 'time_stamp', 'items']
+        transaction = pd.DataFrame(columns=columns)
+        for t in groups:
+            items = t[1]
+            transaction = transaction.append(
+                {
+                    'user_id': items['user_id'].astype('str').values[0],
+                    'items': ','.join(items['item_id'].astype('str').values),
+                    'time_stamp': items['time_stamp'].astype('str').values[0]
+                }, ignore_index=True)
+        transaction.to_csv('data_set/transaction.csv', index=False)
+        print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
     return transaction
+
+
+def construct_user_behavior_list(user_behavior_file, truncate_log_size):
+    result = pd.read_csv(user_behavior_file)
+    print('Finish reading user behavior file, size: {} lines of record.'.format(len(result)))
+    result.sample(frac=1)
+    result = result[:truncate_log_size]
+    print('Finish shuffling and truncating user behavior record, size: {} lines of record.'.format(len(result)))
+    return result
 
 
 def generate_result_string(support_list, rules):
@@ -150,7 +165,7 @@ if __name__ == '__main__':
     opt_parser.add_option('-f', '--input_file',
                           dest='input',
                           help='user behavior record csv',
-                          default='data_set/user_log_format1.csv')
+                          default='data_set/user_log_format_temp.csv')
     opt_parser.add_option('-s', '--min_support',
                           dest='min_support',
                           help='minimum support value',
@@ -168,12 +183,9 @@ if __name__ == '__main__':
                           type='int')
     (options, args) = opt_parser.parse_args()
 
-    user_behavior = pd.read_csv(options.input)
-    print('Finish reading user behavior file, size: {} lines of record.'.format(len(user_behavior)))
-    user_behavior.sample(frac=1)
-    user_behavior = user_behavior[:options.truncate_log_size]
-    print('Finish shuffling and truncating user behavior record, size: {} lines of record.'.format(len(user_behavior)))
-    support_item_list, confidence_rules = run_apriori(user_behavior, options.min_support, options.min_confidence)
+    # user_behavior = construct_user_behavior_list(options.input, options.truncate_log_size)
+    transaction_record = construct_transaction(options.input, options.truncate_log_size)
+    support_item_list, confidence_rules = run_apriori(transaction_record, options.min_support, options.min_confidence)
     result_string = generate_result_string(support_item_list, confidence_rules)
     print(result_string)
     write_to_file(result_string)
