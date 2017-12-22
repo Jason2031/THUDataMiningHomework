@@ -108,24 +108,23 @@ def filter_purchase_record(user_behavior_record):
 
 
 def construct_transaction(user_behavior_file, truncate_log_size, transaction_file='data/transaction.csv'):
+    if transaction_file and os.path.exists(transaction_file):
+        return pd.read_csv(transaction_file)
     user_behavior_record = construct_user_behavior_list(user_behavior_file, truncate_log_size)
     purchase_record = filter_purchase_record(user_behavior_record)
-    if transaction_file and os.path.exists(transaction_file):
-        transaction = pd.read_csv(transaction_file)
-    else:
-        groups = purchase_record.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
-        columns = ['user_id', 'time_stamp', 'items']
-        transaction = pd.DataFrame(columns=columns)
-        for t in groups:
-            items = t[1]
-            transaction = transaction.append(
-                {
-                    'user_id': items['user_id'].astype('str').values[0],
-                    'items': ','.join(items['item_id'].astype('str').values),
-                    'time_stamp': items['time_stamp'].astype('str').values[0]
-                }, ignore_index=True)
-        transaction.to_csv('data_set/transaction.csv', index=False)
-        print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
+    groups = purchase_record.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
+    columns = ['user_id', 'time_stamp', 'items']
+    transaction = pd.DataFrame(columns=columns)
+    for t in groups:
+        items = t[1]
+        transaction = transaction.append(
+            {
+                'user_id': items['user_id'].astype('str').values[0],
+                'items': ','.join(items['item_id'].astype('str').values),
+                'time_stamp': items['time_stamp'].astype('str').values[0]
+            }, ignore_index=True)
+    transaction.to_csv('data_set/transaction.csv', index=False)
+    print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
     return transaction
 
 
