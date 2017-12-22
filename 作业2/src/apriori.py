@@ -107,7 +107,7 @@ def filter_purchase_record(user_behavior_record):
     return purchase.sort_values(by=['time_stamp'])
 
 
-def construct_transaction(user_behavior_file, truncate_log_size, transaction_file='data/transaction.csv'):
+def construct_transaction(user_behavior_file, truncate_log_size, transaction_file='data_set/transaction.csv'):
     if transaction_file and os.path.exists(transaction_file):
         return pd.read_csv(transaction_file)
     user_behavior_record = construct_user_behavior_list(user_behavior_file, truncate_log_size)
@@ -164,7 +164,7 @@ if __name__ == '__main__':
     opt_parser.add_option('-f', '--input_file',
                           dest='input',
                           help='user behavior record csv',
-                          default='data_set/user_log_format_temp.csv')
+                          default='data_set/user_log_format1.csv')
     opt_parser.add_option('-s', '--min_support',
                           dest='min_support',
                           help='minimum support value',
