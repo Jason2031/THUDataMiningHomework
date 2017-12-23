@@ -5,27 +5,25 @@ import os
 
 def run_apriori(transaction, min_support, min_confidence):
     support_list = []
-    candidate_item_set_list = []
-    frequent_item_set_list = []
-    one_item_list = get_1_item_set(transaction)
-    candidate_item_set_list.append(one_item_list)
-    support = {tuple([int(item)]): 0 for item in candidate_item_set_list[0]}
-    for t in transaction['items']:
+    candidate_item_set_list = get_1_item_set(transaction)
+    support = {tuple([int(item)]): 0 for item in candidate_item_set_list}
+    for t in transaction:
         items = set(t.split(','))
         for item in items:
             support[tuple([int(item)])] += 1
     length = 1
     while True:
+        print('Length:{}\n# of candidate item set: {}'.format(length, len(candidate_item_set_list)))
         length += 1
         support = {k: v for k, v in support.items() if v >= min_support}
         support_list.append([(k, v) for k, v in support.items()])
-        frequent_item_set_list.append([x for x in support.keys()])
-        candidate_item_set_list.append(generate_candidate_item_set(frequent_item_set_list[-1], length))
-        if len(candidate_item_set_list[-1]) == 0:
+        candidate_item_set_list = generate_candidate_item_set([x for x in support.keys()], length)
+        if len(candidate_item_set_list) == 0:
             break
-        transaction = transaction[transaction.apply(lambda x: len(x['items'].split(',')) >= length, axis=1)]
-        support = {tuple(sorted(item)): 0 for item in candidate_item_set_list[-1]}
-        for t in transaction['items']:
+        transaction = [x for x in transaction if len(x.split(',')) >= length]
+        # transaction = transaction[transaction.apply(lambda x: len(x.split(',')) >= length, axis=1)]
+        support = {tuple(sorted(item)): 0 for item in candidate_item_set_list}
+        for t in transaction:
             items = set(int(x) for x in t.split(','))
             for k, v in support.items():
                 if set(k).issubset(items):
@@ -79,8 +77,6 @@ def generate_candidate_item_set(item_list, length):
     :param length: each frequent-item-set's length
     :return: candidate item set
     """
-    if not isinstance(item_list, list):
-        return None
     result = []
     for index1 in range(len(item_list) - 1):
         for index2 in range(index1 + 1, len(item_list)):
@@ -92,7 +88,7 @@ def generate_candidate_item_set(item_list, length):
 
 def get_1_item_set(transaction):
     result = set()
-    for t in transaction['items']:
+    for t in transaction:
         items = t.split(',')
         for item in items:
             result.add(item)
@@ -109,22 +105,23 @@ def filter_purchase_record(user_behavior_record):
 
 def construct_transaction(user_behavior_file, truncate_log_size, transaction_file='data_set/transaction.csv'):
     if transaction_file and os.path.exists(transaction_file):
-        return pd.read_csv(transaction_file)
-    user_behavior_record = construct_user_behavior_list(user_behavior_file, truncate_log_size)
-    purchase_record = filter_purchase_record(user_behavior_record)
-    groups = purchase_record.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
-    columns = ['user_id', 'time_stamp', 'items']
-    transaction = pd.DataFrame(columns=columns)
-    for t in groups:
-        items = t[1]
-        transaction = transaction.append(
-            {
-                'user_id': items['user_id'].astype('str').values[0],
-                'items': ','.join(items['item_id'].astype('str').values),
-                'time_stamp': items['time_stamp'].astype('str').values[0]
-            }, ignore_index=True)
-    transaction.to_csv('data_set/transaction.csv', index=False)
-    print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
+        transaction = pd.read_csv(transaction_file)
+    else:
+        user_behavior_record = construct_user_behavior_list(user_behavior_file, truncate_log_size)
+        purchase_record = filter_purchase_record(user_behavior_record)
+        groups = purchase_record.groupby(['time_stamp', 'user_id'])  # transaction = same user buys items in same day
+        columns = ['items']
+        transaction = pd.DataFrame(columns=columns)
+        for t in groups:
+            items = t[1]
+            transaction = transaction.append(
+                {
+                    'items': ','.join(items['item_id'].astype('str').values)
+                }, ignore_index=True)
+        transaction.to_csv('data_set/transaction.csv', index=False)
+        print('Finish constructing transaction record, size: {} lines of record'.format(len(transaction)))
+    transaction = transaction[:1024 * 16].values
+    transaction = [x[0] for x in transaction]
     return transaction
 
 
@@ -159,7 +156,19 @@ def write_to_file(result, destination='result/apriori_result.txt'):
         f.write(result)
 
 
-if __name__ == '__main__':
+def dispose():
+    df = pd.read_csv('data_set/transaction.csv')
+    columns = ['items']
+    t = pd.DataFrame(columns=columns)
+    for index, row in df.iterrows():
+        t = t.append(
+            {
+                'items': row['items']
+            }, ignore_index=True)
+    t.to_csv('data_set/transaction_disposed.csv', index=False)
+
+
+def main():
     opt_parser = OptionParser()
     opt_parser.add_option('-f', '--input_file',
                           dest='input',
@@ -188,3 +197,7 @@ if __name__ == '__main__':
     result_string = generate_result_string(support_item_list, confidence_rules)
     print(result_string)
     write_to_file(result_string)
+
+
+if __name__ == '__main__':
+    main()

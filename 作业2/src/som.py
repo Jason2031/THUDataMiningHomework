@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 from matplotlib import pyplot as plt
+from matplotlib import cm as cm
 import pandas as pd
 from optparse import OptionParser
 import os
@@ -30,14 +31,17 @@ class SOM(object):
         influence_radius = max(output_width, output_length) / 2.0 if influence_radius is None else float(
             influence_radius)
         self._n_iterations = abs(int(n_iterations))
+        output_size = output_width * output_length
 
         with tf.Graph().as_default():
-            self._weight_vectors = tf.Variable(tf.random_normal([output_width * output_length, input_dimension]))
+            self._weight_vectors = tf.Variable(tf.random_normal([output_size, input_dimension]))
 
             self._location_vectors = tf.constant(np.array(list(self._neuron_locations(output_width, output_length))))
 
-            self._input_vector = tf.placeholder("float", [input_dimension])
-            self._input_iteration_number = tf.placeholder("float")
+            self._input_vector = tf.placeholder('float32', [input_dimension])
+            self._input_iteration_number = tf.placeholder('float32')
+
+            self._heat = tf.Variable(tf.to_float(np.ones([output_size])))
 
             # To compute the Best Matching Unit given a vector, simply calculates the Euclidean distance between
             # every neuron's weight vector and the input, and returns the index of the neuron which gives the least
@@ -61,21 +65,24 @@ class SOM(object):
             # number and location wrt BMU.
             bmu_distance_squares = tf.reduce_sum(tf.pow(tf.subtract(
                 self._location_vectors, tf.stack([bmu_loc for i in range(output_width * output_length)])), 2), 1)
-            neighbourhood_func = tf.exp(tf.negative(tf.div(tf.cast(
-                bmu_distance_squares, "float32"), tf.pow(_sigma_op, 2))))
+            neighbourhood_func = tf.exp(tf.negative(tf.sqrt(tf.div(tf.cast(
+                bmu_distance_squares, 'float32'), tf.pow(_sigma_op, 2)))))
             learning_rate_op = tf.multiply(_alpha_op, neighbourhood_func)
 
             # Finally, the op that will use learning_rate_op to update the weight vectors of all neurons based on a
             # particular input
             learning_rate_multiplier = tf.stack(
                 [tf.tile(tf.slice(learning_rate_op, np.array([i]), np.array([1])), [input_dimension]) for i in
-                 range(output_width * output_length)])
-            weight_delta = tf.multiply(
-                learning_rate_multiplier,
-                tf.subtract(tf.stack([self._input_vector for i in range(output_width * output_length)]),
-                            self._weight_vectors))
+                 range(output_size)])
+            weight_delta = tf.multiply(learning_rate_multiplier, tf.subtract(tf.stack(
+                [self._input_vector for i in range(output_width * output_length)]), self._weight_vectors))
             new_weight_op = tf.add(self._weight_vectors, weight_delta)
             self._training_op = tf.assign(self._weight_vectors, new_weight_op)
+
+            # update_heat_rate=tf.stack([] for i in range(output_size))
+            new_heat = tf.multiply(tf.add(learning_rate_op, np.ones([output_size])),
+                                   self._heat)
+            self._update_heat_op = tf.assign(self._heat, new_heat)
 
             self._sess = tf.Session()
             self._sess.run(tf.global_variables_initializer())
@@ -99,64 +106,44 @@ class SOM(object):
         :return:
         """
         for input_vector in input_vectors:
-            self._sess.run(self._training_op,
+            self._sess.run([self._training_op, self._update_heat_op],
                            feed_dict={self._input_vector: input_vector,
                                       self._input_iteration_number: iter_no})
 
-    def train(self, input_vectors, batch_size):
+    def train(self, input_vectors):
         """
         Trains the SOM. Current weight vectors for all neurons (initially random) are taken as starting conditions
         for training.
         :param input_vectors: an iterable of 1-D NumPy arrays with dimensionality as provided during initialization
         of this SOM.
-        :param batch_size: batch size
         """
         print('Training begins...')
         # Training iterations
         for iter_no in range(self._n_iterations):
-            print('Iter #{}/{}, batch_size: {}'.format(iter_no + 1, self._n_iterations, batch_size))
-            # Randomly pick a batch from the given input vectors
-            batch = input_vectors[np.random.randint(input_vectors.shape[0], size=batch_size), :]
-            self.train_step(batch, iter_no)
+            print('Iter #{}/{}'.format(iter_no + 1, self._n_iterations))
+            self.train_step(input_vectors, iter_no)
         self._trained = True
 
-    def get_centroids(self):
+    def get_heat_vec(self):
         """
         Returns a list of 'length' lists, with each inner list containing the 'width' corresponding centroid
         locations as 1-D NumPy arrays.
         """
         if not self._trained:
-            raise ValueError("SOM not trained yet")
-        centroid_grid = [[] for i in range(self._output_width)]
-        weight = list(self._sess.run(self._weight_vectors))
-        locations = list(self._sess.run(self._location_vectors))
-        for i, loc in enumerate(locations):
-            centroid_grid[loc[0]].append(weight[i])
-        return centroid_grid
-
-    def map_vectors(self, input_vectors):
-        """
-        Maps each input vector to the relevant neuron in the SOM grid.
-        :param input_vectors: an iterable of 1-D NumPy arrays with dimensionality as provided during initialization
-        of this SOM.
-        :return: a list of 1-D NumPy arrays containing (row, column) info for each input vector(in the same order),
-        corresponding to mapped neuron.
-        """
-        if not self._trained:
-            raise ValueError("SOM not trained yet")
-        weight = list(self._sess.run(self._weight_vectors))
-        locations = list(self._sess.run(self._location_vectors))
-        to_return = []
-        for vector in input_vectors:
-            min_index = min([i for i in range(len(weight))], key=lambda x: np.linalg.norm(vector - weight[x]))
-            to_return.append(locations[min_index])
-        return to_return
+            raise ValueError('SOM not trained yet')
+        heat = list(self._sess.run(self._heat))
+        v_min_val = int(np.min(heat))
+        v_max_val = int(np.max(heat) + 1)
+        heat = np.reshape(heat, [self._output_width, self._output_length])
+        return heat, v_min_val, v_max_val
 
 
-def construct_user_behavior_array(user_behavior_file):
+def construct_user_behavior_array(user_behavior_file, size):
     if not os.path.exists(user_behavior_file):
         raise FileNotFoundError('No user behavior file found!')
     df = pd.read_csv(user_behavior_file)
+    df = df.sample(frac=1)
+    df = df[:size]
     df = df.filter(items=['user_id', 'item_id', 'action_type'])
     df['user_id'] = df['user_id'].astype(int)
     df['item_id'] = df['item_id'].astype(int)
@@ -176,7 +163,6 @@ def construct_user_behavior_array(user_behavior_file):
         if row['item_id'] not in item_map.keys():
             item_map[row['item_id']] = len(item_map)
         output[user_map[row['user_id']]][item_map[row['item_id']]] = row['action_type']
-    np.random.shuffle(output)
     return output
 
 
@@ -192,7 +178,7 @@ if __name__ == '__main__':
     opt_parser.add_option('-f', '--input_file',
                           dest='input',
                           help='user behavior record csv',
-                          default='data_set/user_log_format_temp.csv')
+                          default='data_set/user_log_format1.csv')
     opt_parser.add_option('-w', '--som_width',
                           dest='som_width',
                           help='width of som network',
@@ -215,16 +201,20 @@ if __name__ == '__main__':
                           type='int')
     (options, args) = opt_parser.parse_args()
 
-    user_behavior = construct_user_behavior_array(options.input)
+    user_behavior = construct_user_behavior_array(options.input, options.batch_size)
 
     som = SOM(options.som_width, options.som_length, user_behavior[0].size, options.iteration_count)
-    som.train(user_behavior, options.batch_size)
+    som.train(user_behavior)
 
     # Get output grid
-    image_grid = som.get_centroids()
+    heat_vec, v_min, v_max = som.get_heat_vec()
 
     # Plot
-    plt.imshow(image_grid)
+    fig = plt.figure(facecolor='w')
+    ax1 = fig.add_subplot(1, 1, 1)
+    cmap = cm.get_cmap('nipy_spectral', 1000)
+    m = ax1.imshow(heat_vec, interpolation="nearest", cmap=cmap, aspect='auto', vmin=v_min, vmax=v_max)
+    cb = plt.colorbar(mappable=m, cax=None, ax=None)
     plt.title('User behavior SOM')
     save_result(plt)
     plt.show()
