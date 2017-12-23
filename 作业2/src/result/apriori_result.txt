@@ -1,0 +1,2330 @@
+------------------ FREQUENT ITEM SET ------------------
+Item set length: 1
+	item: (212885,), sup: 3
+	item: (655904,), sup: 3
+	item: (73558,), sup: 3
+	item: (935393,), sup: 8
+	item: (847383,), sup: 4
+	item: (218211,), sup: 9
+	item: (600830,), sup: 14
+	item: (282761,), sup: 5
+	item: (263972,), sup: 6
+	item: (1080767,), sup: 3
+	item: (100069,), sup: 8
+	item: (553504,), sup: 4
+	item: (123659,), sup: 6
+	item: (842150,), sup: 11
+	item: (434162,), sup: 4
+	item: (734605,), sup: 4
+	item: (365902,), sup: 4
+	item: (948890,), sup: 5
+	item: (742881,), sup: 7
+	item: (524650,), sup: 6
+	item: (851191,), sup: 7
+	item: (909436,), sup: 4
+	item: (950825,), sup: 8
+	item: (895630,), sup: 4
+	item: (263658,), sup: 4
+	item: (570470,), sup: 4
+	item: (742571,), sup: 14
+	item: (831531,), sup: 5
+	item: (1038260,), sup: 4
+	item: (317166,), sup: 3
+	item: (1049364,), sup: 8
+	item: (235951,), sup: 6
+	item: (671739,), sup: 6
+	item: (153633,), sup: 3
+	item: (1063589,), sup: 11
+	item: (578568,), sup: 3
+	item: (953798,), sup: 3
+	item: (691493,), sup: 7
+	item: (362059,), sup: 3
+	item: (236774,), sup: 9
+	item: (809165,), sup: 3
+	item: (180056,), sup: 4
+	item: (542195,), sup: 9
+	item: (410804,), sup: 3
+	item: (517942,), sup: 3
+	item: (200796,), sup: 4
+	item: (195714,), sup: 4
+	item: (426781,), sup: 4
+	item: (2472,), sup: 3
+	item: (712452,), sup: 3
+	item: (451920,), sup: 3
+	item: (105451,), sup: 10
+	item: (246150,), sup: 3
+	item: (72364,), sup: 5
+	item: (992011,), sup: 3
+	item: (150125,), sup: 5
+	item: (675408,), sup: 10
+	item: (1021587,), sup: 7
+	item: (1066580,), sup: 3
+	item: (291706,), sup: 5
+	item: (188320,), sup: 11
+	item: (866518,), sup: 3
+	item: (1049530,), sup: 8
+	item: (419005,), sup: 3
+	item: (547532,), sup: 6
+	item: (959614,), sup: 4
+	item: (720447,), sup: 4
+	item: (507661,), sup: 3
+	item: (817203,), sup: 3
+	item: (15496,), sup: 12
+	item: (973493,), sup: 5
+	item: (717120,), sup: 3
+	item: (444379,), sup: 3
+	item: (528385,), sup: 4
+	item: (27974,), sup: 8
+	item: (273640,), sup: 8
+	item: (799363,), sup: 7
+	item: (836942,), sup: 3
+	item: (1011562,), sup: 7
+	item: (550149,), sup: 8
+	item: (203664,), sup: 6
+	item: (599238,), sup: 4
+	item: (986978,), sup: 5
+	item: (792376,), sup: 3
+	item: (363987,), sup: 14
+	item: (1033725,), sup: 5
+	item: (699477,), sup: 4
+	item: (291552,), sup: 6
+	item: (933886,), sup: 8
+	item: (1101590,), sup: 3
+	item: (1104538,), sup: 7
+	item: (163543,), sup: 4
+	item: (658979,), sup: 3
+	item: (103459,), sup: 6
+	item: (101566,), sup: 12
+	item: (129663,), sup: 3
+	item: (49162,), sup: 3
+	item: (296613,), sup: 3
+	item: (902758,), sup: 4
+	item: (761073,), sup: 14
+	item: (352908,), sup: 4
+	item: (561825,), sup: 8
+	item: (710872,), sup: 7
+	item: (915899,), sup: 6
+	item: (607439,), sup: 7
+	item: (2587,), sup: 5
+	item: (626870,), sup: 11
+	item: (712156,), sup: 5
+	item: (2085,), sup: 3
+	item: (691246,), sup: 4
+	item: (873898,), sup: 7
+	item: (985157,), sup: 13
+	item: (316779,), sup: 6
+	item: (1075974,), sup: 3
+	item: (627089,), sup: 5
+	item: (809671,), sup: 3
+	item: (909331,), sup: 9
+	item: (205780,), sup: 13
+	item: (755311,), sup: 3
+	item: (1005856,), sup: 3
+	item: (1061462,), sup: 3
+	item: (270204,), sup: 4
+	item: (326499,), sup: 6
+	item: (311806,), sup: 9
+	item: (800724,), sup: 3
+	item: (954581,), sup: 3
+	item: (961702,), sup: 3
+	item: (502887,), sup: 4
+	item: (114456,), sup: 3
+	item: (878003,), sup: 4
+	item: (920335,), sup: 5
+	item: (874167,), sup: 7
+	item: (5736,), sup: 3
+	item: (631391,), sup: 5
+	item: (516759,), sup: 14
+	item: (890128,), sup: 33
+	item: (568235,), sup: 6
+	item: (207724,), sup: 3
+	item: (447659,), sup: 3
+	item: (790712,), sup: 4
+	item: (1083219,), sup: 18
+	item: (307321,), sup: 5
+	item: (480788,), sup: 4
+	item: (76245,), sup: 4
+	item: (14801,), sup: 3
+	item: (954145,), sup: 4
+	item: (788567,), sup: 7
+	item: (577763,), sup: 5
+	item: (129323,), sup: 40
+	item: (390832,), sup: 3
+	item: (788081,), sup: 3
+	item: (336651,), sup: 3
+	item: (66778,), sup: 4
+	item: (270592,), sup: 3
+	item: (314871,), sup: 10
+	item: (206365,), sup: 11
+	item: (806876,), sup: 10
+	item: (521027,), sup: 9
+	item: (575966,), sup: 5
+	item: (1030303,), sup: 3
+	item: (972229,), sup: 4
+	item: (588272,), sup: 3
+	item: (846609,), sup: 15
+	item: (866306,), sup: 3
+	item: (271735,), sup: 23
+	item: (64210,), sup: 4
+	item: (626067,), sup: 3
+	item: (180270,), sup: 8
+	item: (810324,), sup: 3
+	item: (523285,), sup: 4
+	item: (118742,), sup: 12
+	item: (825596,), sup: 5
+	item: (312259,), sup: 8
+	item: (601672,), sup: 7
+	item: (808163,), sup: 4
+	item: (336137,), sup: 3
+	item: (723519,), sup: 3
+	item: (778442,), sup: 7
+	item: (104293,), sup: 20
+	item: (828966,), sup: 7
+	item: (367662,), sup: 14
+	item: (408039,), sup: 3
+	item: (636923,), sup: 3
+	item: (500237,), sup: 9
+	item: (356996,), sup: 5
+	item: (689614,), sup: 4
+	item: (597748,), sup: 3
+	item: (704479,), sup: 3
+	item: (1008810,), sup: 3
+	item: (928710,), sup: 3
+	item: (52817,), sup: 14
+	item: (366443,), sup: 10
+	item: (767917,), sup: 24
+	item: (461368,), sup: 5
+	item: (189999,), sup: 6
+	item: (697352,), sup: 9
+	item: (710817,), sup: 4
+	item: (309018,), sup: 3
+	item: (833634,), sup: 3
+	item: (3837,), sup: 3
+	item: (672190,), sup: 3
+	item: (188799,), sup: 3
+	item: (503205,), sup: 5
+	item: (179558,), sup: 3
+	item: (627697,), sup: 3
+	item: (785447,), sup: 3
+	item: (156338,), sup: 13
+	item: (606835,), sup: 3
+	item: (678863,), sup: 18
+	item: (995611,), sup: 3
+	item: (248385,), sup: 3
+	item: (1073372,), sup: 3
+	item: (411511,), sup: 3
+	item: (1002754,), sup: 3
+	item: (208520,), sup: 6
+	item: (392247,), sup: 6
+	item: (458565,), sup: 5
+	item: (712505,), sup: 3
+	item: (414802,), sup: 4
+	item: (827768,), sup: 9
+	item: (1034003,), sup: 7
+	item: (1084846,), sup: 3
+	item: (122937,), sup: 5
+	item: (172584,), sup: 9
+	item: (425327,), sup: 6
+	item: (562170,), sup: 5
+	item: (963259,), sup: 5
+	item: (261882,), sup: 3
+	item: (26647,), sup: 3
+	item: (1078589,), sup: 4
+	item: (1047496,), sup: 6
+	item: (459044,), sup: 11
+	item: (736623,), sup: 4
+	item: (426855,), sup: 3
+	item: (121330,), sup: 6
+	item: (673092,), sup: 3
+	item: (530611,), sup: 10
+	item: (1043542,), sup: 5
+	item: (972572,), sup: 3
+	item: (649596,), sup: 41
+	item: (966634,), sup: 3
+	item: (914821,), sup: 8
+	item: (460102,), sup: 3
+	item: (187026,), sup: 3
+	item: (1110317,), sup: 3
+	item: (149432,), sup: 3
+	item: (753902,), sup: 3
+	item: (268153,), sup: 8
+	item: (177071,), sup: 21
+	item: (857658,), sup: 3
+	item: (1086304,), sup: 3
+	item: (174587,), sup: 3
+	item: (578129,), sup: 4
+	item: (621923,), sup: 4
+	item: (716296,), sup: 4
+	item: (849434,), sup: 11
+	item: (695102,), sup: 19
+	item: (1053796,), sup: 4
+	item: (82058,), sup: 3
+	item: (282032,), sup: 7
+	item: (528459,), sup: 15
+	item: (767374,), sup: 3
+	item: (131594,), sup: 4
+	item: (183925,), sup: 4
+	item: (579128,), sup: 3
+	item: (629403,), sup: 3
+	item: (659766,), sup: 3
+	item: (947112,), sup: 3
+	item: (925520,), sup: 4
+	item: (547970,), sup: 6
+	item: (338759,), sup: 4
+	item: (803949,), sup: 3
+	item: (501550,), sup: 3
+	item: (785849,), sup: 3
+	item: (210671,), sup: 20
+	item: (344488,), sup: 3
+	item: (826427,), sup: 5
+	item: (582358,), sup: 3
+	item: (177559,), sup: 6
+	item: (547766,), sup: 23
+	item: (758079,), sup: 15
+	item: (512945,), sup: 3
+	item: (588429,), sup: 6
+	item: (854848,), sup: 3
+	item: (849057,), sup: 3
+	item: (182071,), sup: 3
+	item: (810434,), sup: 3
+	item: (1046248,), sup: 32
+	item: (448197,), sup: 3
+	item: (47529,), sup: 5
+	item: (855108,), sup: 4
+	item: (431440,), sup: 8
+	item: (440180,), sup: 3
+	item: (348409,), sup: 5
+	item: (915181,), sup: 4
+	item: (502801,), sup: 57
+	item: (28003,), sup: 3
+	item: (979866,), sup: 4
+	item: (855906,), sup: 12
+	item: (570877,), sup: 5
+	item: (1055624,), sup: 4
+	item: (892451,), sup: 3
+	item: (655844,), sup: 3
+	item: (727562,), sup: 6
+	item: (499147,), sup: 6
+	item: (1081446,), sup: 3
+	item: (702193,), sup: 5
+	item: (786386,), sup: 4
+	item: (293298,), sup: 4
+	item: (885357,), sup: 3
+	item: (1092071,), sup: 4
+	item: (829688,), sup: 4
+	item: (883382,), sup: 14
+	item: (1098506,), sup: 3
+	item: (12290,), sup: 6
+	item: (333469,), sup: 3
+	item: (676803,), sup: 4
+	item: (529028,), sup: 6
+	item: (561733,), sup: 25
+	item: (616656,), sup: 4
+	item: (851500,), sup: 4
+	item: (533703,), sup: 3
+	item: (89684,), sup: 4
+	item: (821779,), sup: 3
+	item: (917988,), sup: 4
+	item: (748693,), sup: 4
+	item: (951072,), sup: 5
+	item: (6587,), sup: 4
+	item: (1051734,), sup: 3
+	item: (971489,), sup: 3
+	item: (873338,), sup: 4
+	item: (290583,), sup: 6
+	item: (18493,), sup: 3
+	item: (563903,), sup: 5
+	item: (858085,), sup: 11
+	item: (766924,), sup: 9
+	item: (947815,), sup: 3
+	item: (601330,), sup: 3
+	item: (922253,), sup: 3
+	item: (524153,), sup: 5
+	item: (647758,), sup: 5
+	item: (764121,), sup: 9
+	item: (244571,), sup: 5
+	item: (978547,), sup: 3
+	item: (765405,), sup: 3
+	item: (437406,), sup: 7
+	item: (946985,), sup: 3
+	item: (359438,), sup: 3
+	item: (375903,), sup: 5
+	item: (204497,), sup: 4
+	item: (666375,), sup: 12
+	item: (65938,), sup: 3
+	item: (514030,), sup: 5
+	item: (254022,), sup: 5
+	item: (324565,), sup: 3
+	item: (496456,), sup: 17
+	item: (118011,), sup: 3
+	item: (614097,), sup: 4
+	item: (562685,), sup: 3
+	item: (116962,), sup: 10
+	item: (663421,), sup: 6
+	item: (688373,), sup: 4
+	item: (82431,), sup: 9
+	item: (772645,), sup: 3
+	item: (530251,), sup: 3
+	item: (505461,), sup: 5
+	item: (1073970,), sup: 29
+	item: (27085,), sup: 11
+	item: (419252,), sup: 3
+	item: (461568,), sup: 11
+	item: (693302,), sup: 19
+	item: (225628,), sup: 3
+	item: (1081373,), sup: 4
+	item: (1011011,), sup: 12
+	item: (287710,), sup: 21
+	item: (1003949,), sup: 3
+	item: (203050,), sup: 4
+	item: (717392,), sup: 3
+	item: (318380,), sup: 3
+	item: (550098,), sup: 7
+	item: (174957,), sup: 5
+	item: (1077268,), sup: 20
+	item: (1003705,), sup: 5
+	item: (683168,), sup: 5
+	item: (934715,), sup: 5
+	item: (397745,), sup: 14
+	item: (209660,), sup: 10
+	item: (691939,), sup: 7
+	item: (576469,), sup: 7
+	item: (330505,), sup: 3
+	item: (602660,), sup: 3
+	item: (944842,), sup: 3
+	item: (718513,), sup: 5
+	item: (401778,), sup: 4
+	item: (930791,), sup: 3
+	item: (82584,), sup: 4
+	item: (274189,), sup: 3
+	item: (623193,), sup: 18
+	item: (38170,), sup: 4
+	item: (585280,), sup: 10
+	item: (567196,), sup: 14
+	item: (266291,), sup: 3
+	item: (1019368,), sup: 17
+	item: (130217,), sup: 3
+	item: (330207,), sup: 3
+	item: (928874,), sup: 13
+	item: (646489,), sup: 3
+	item: (1062993,), sup: 8
+	item: (443783,), sup: 16
+	item: (683681,), sup: 4
+	item: (740114,), sup: 3
+	item: (749997,), sup: 3
+	item: (551635,), sup: 3
+	item: (520061,), sup: 18
+	item: (775803,), sup: 4
+	item: (642403,), sup: 5
+	item: (381224,), sup: 3
+	item: (197218,), sup: 6
+	item: (1087741,), sup: 4
+	item: (347784,), sup: 3
+	item: (80565,), sup: 4
+	item: (343625,), sup: 4
+	item: (26533,), sup: 4
+	item: (304998,), sup: 3
+	item: (590732,), sup: 14
+	item: (931565,), sup: 9
+	item: (170074,), sup: 3
+	item: (593272,), sup: 4
+	item: (682779,), sup: 3
+	item: (1077249,), sup: 9
+	item: (676215,), sup: 3
+	item: (483368,), sup: 10
+	item: (595651,), sup: 3
+	item: (97630,), sup: 3
+	item: (80260,), sup: 5
+	item: (291435,), sup: 4
+	item: (406828,), sup: 14
+	item: (200274,), sup: 3
+	item: (1005111,), sup: 3
+	item: (352468,), sup: 9
+	item: (214895,), sup: 3
+	item: (155130,), sup: 48
+	item: (927264,), sup: 4
+	item: (717654,), sup: 4
+	item: (282429,), sup: 7
+	item: (917004,), sup: 3
+	item: (575822,), sup: 5
+	item: (941822,), sup: 11
+	item: (449316,), sup: 6
+	item: (33136,), sup: 3
+	item: (662931,), sup: 3
+	item: (486424,), sup: 4
+	item: (481614,), sup: 3
+	item: (376793,), sup: 16
+	item: (1107286,), sup: 4
+	item: (264207,), sup: 4
+	item: (1064602,), sup: 5
+	item: (573019,), sup: 7
+	item: (292086,), sup: 3
+	item: (586012,), sup: 5
+	item: (14914,), sup: 3
+	item: (126588,), sup: 20
+	item: (1086725,), sup: 4
+	item: (674704,), sup: 6
+	item: (719019,), sup: 4
+	item: (665369,), sup: 4
+	item: (485484,), sup: 3
+	item: (817902,), sup: 3
+	item: (742598,), sup: 4
+	item: (19887,), sup: 4
+	item: (798778,), sup: 11
+	item: (86511,), sup: 6
+	item: (74428,), sup: 4
+	item: (14679,), sup: 4
+	item: (823788,), sup: 8
+	item: (634531,), sup: 3
+	item: (351177,), sup: 9
+	item: (759459,), sup: 6
+	item: (1043019,), sup: 6
+	item: (806537,), sup: 3
+	item: (545298,), sup: 6
+	item: (782873,), sup: 4
+	item: (1077697,), sup: 30
+	item: (678087,), sup: 3
+	item: (64247,), sup: 4
+	item: (225410,), sup: 3
+	item: (459100,), sup: 5
+	item: (630851,), sup: 8
+	item: (602884,), sup: 4
+	item: (674858,), sup: 11
+	item: (1008325,), sup: 3
+	item: (723280,), sup: 10
+	item: (692203,), sup: 6
+	item: (645137,), sup: 3
+	item: (420499,), sup: 4
+	item: (790764,), sup: 3
+	item: (482518,), sup: 3
+	item: (1094497,), sup: 11
+	item: (86562,), sup: 3
+	item: (55500,), sup: 3
+	item: (15445,), sup: 16
+	item: (990,), sup: 7
+	item: (1063743,), sup: 6
+	item: (1110474,), sup: 4
+	item: (412400,), sup: 6
+	item: (687537,), sup: 4
+	item: (450541,), sup: 3
+	item: (836365,), sup: 3
+	item: (414414,), sup: 3
+	item: (643060,), sup: 6
+	item: (710682,), sup: 5
+	item: (376501,), sup: 4
+	item: (151158,), sup: 4
+	item: (414007,), sup: 6
+	item: (407490,), sup: 12
+	item: (448131,), sup: 4
+	item: (282508,), sup: 6
+	item: (951788,), sup: 5
+	item: (949127,), sup: 4
+	item: (892434,), sup: 18
+	item: (935085,), sup: 3
+	item: (211496,), sup: 4
+	item: (199417,), sup: 3
+	item: (685792,), sup: 9
+	item: (37654,), sup: 3
+	item: (690593,), sup: 3
+	item: (434903,), sup: 3
+	item: (524552,), sup: 6
+	item: (1090952,), sup: 4
+	item: (294590,), sup: 11
+	item: (202057,), sup: 5
+	item: (221886,), sup: 5
+	item: (898058,), sup: 3
+	item: (1075877,), sup: 5
+	item: (680706,), sup: 4
+	item: (20721,), sup: 6
+	item: (714317,), sup: 3
+	item: (747790,), sup: 4
+	item: (111156,), sup: 3
+	item: (539520,), sup: 3
+	item: (386167,), sup: 4
+	item: (682498,), sup: 4
+	item: (1034024,), sup: 4
+	item: (167363,), sup: 5
+	item: (939685,), sup: 4
+	item: (406303,), sup: 3
+	item: (811447,), sup: 3
+	item: (812336,), sup: 12
+	item: (969067,), sup: 3
+	item: (96441,), sup: 3
+	item: (1099820,), sup: 3
+	item: (951634,), sup: 8
+	item: (629741,), sup: 3
+	item: (680979,), sup: 5
+	item: (1067694,), sup: 3
+	item: (88020,), sup: 3
+	item: (147706,), sup: 4
+	item: (929056,), sup: 4
+	item: (75350,), sup: 7
+	item: (709500,), sup: 5
+	item: (19084,), sup: 5
+	item: (691733,), sup: 16
+	item: (405989,), sup: 16
+	item: (1105037,), sup: 6
+	item: (742168,), sup: 5
+	item: (997811,), sup: 3
+	item: (49881,), sup: 3
+	item: (624693,), sup: 76
+	item: (669912,), sup: 4
+	item: (1104886,), sup: 5
+	item: (68279,), sup: 3
+	item: (882547,), sup: 4
+	item: (267495,), sup: 8
+	item: (91806,), sup: 4
+	item: (1015290,), sup: 3
+	item: (268560,), sup: 3
+	item: (606790,), sup: 3
+	item: (845063,), sup: 5
+	item: (909995,), sup: 4
+	item: (33976,), sup: 3
+	item: (778415,), sup: 4
+	item: (479328,), sup: 3
+	item: (829179,), sup: 3
+	item: (986262,), sup: 9
+	item: (616892,), sup: 12
+	item: (968099,), sup: 4
+	item: (564606,), sup: 3
+	item: (789503,), sup: 3
+	item: (671751,), sup: 4
+	item: (962891,), sup: 9
+	item: (591846,), sup: 10
+	item: (924273,), sup: 5
+	item: (607911,), sup: 13
+	item: (387611,), sup: 5
+	item: (292440,), sup: 7
+	item: (987790,), sup: 9
+	item: (868276,), sup: 3
+	item: (819791,), sup: 5
+	item: (436442,), sup: 10
+	item: (611584,), sup: 3
+	item: (613942,), sup: 3
+	item: (79207,), sup: 5
+	item: (204905,), sup: 3
+	item: (1069866,), sup: 9
+	item: (1022405,), sup: 4
+	item: (822352,), sup: 23
+	item: (844523,), sup: 3
+	item: (881658,), sup: 3
+	item: (58943,), sup: 38
+	item: (751264,), sup: 4
+	item: (111255,), sup: 3
+	item: (952610,), sup: 3
+	item: (1048509,), sup: 5
+	item: (389704,), sup: 4
+	item: (927971,), sup: 3
+	item: (376702,), sup: 6
+	item: (1289,), sup: 5
+	item: (965540,), sup: 5
+	item: (1056319,), sup: 7
+	item: (825184,), sup: 3
+	item: (776012,), sup: 3
+	item: (963316,), sup: 4
+	item: (534671,), sup: 26
+	item: (1025823,), sup: 3
+	item: (1103222,), sup: 5
+	item: (220484,), sup: 3
+	item: (141611,), sup: 3
+	item: (873041,), sup: 3
+	item: (825580,), sup: 6
+	item: (656658,), sup: 3
+	item: (371462,), sup: 3
+	item: (698927,), sup: 3
+	item: (489301,), sup: 4
+	item: (253408,), sup: 5
+	item: (771606,), sup: 11
+	item: (793882,), sup: 34
+	item: (172797,), sup: 3
+	item: (745251,), sup: 14
+	item: (100425,), sup: 4
+	item: (374590,), sup: 14
+	item: (895754,), sup: 6
+	item: (1093902,), sup: 12
+	item: (444401,), sup: 5
+	item: (944466,), sup: 4
+	item: (202418,), sup: 16
+	item: (379918,), sup: 5
+	item: (221135,), sup: 6
+	item: (478848,), sup: 3
+	item: (796929,), sup: 3
+	item: (519031,), sup: 3
+	item: (1032450,), sup: 3
+	item: (604712,), sup: 4
+	item: (208361,), sup: 4
+	item: (906116,), sup: 9
+	item: (1035434,), sup: 8
+	item: (715184,), sup: 4
+	item: (355284,), sup: 3
+	item: (350950,), sup: 5
+	item: (962927,), sup: 3
+	item: (601576,), sup: 13
+	item: (307569,), sup: 3
+	item: (489789,), sup: 17
+	item: (243468,), sup: 5
+	item: (945801,), sup: 4
+	item: (601023,), sup: 3
+	item: (423846,), sup: 3
+	item: (887345,), sup: 3
+	item: (935986,), sup: 6
+	item: (865616,), sup: 6
+	item: (830580,), sup: 8
+	item: (701888,), sup: 5
+	item: (692663,), sup: 24
+	item: (992322,), sup: 3
+	item: (581992,), sup: 9
+	item: (132867,), sup: 9
+	item: (953360,), sup: 4
+	item: (635563,), sup: 5
+	item: (776518,), sup: 3
+	item: (380881,), sup: 3
+	item: (10247,), sup: 3
+	item: (224184,), sup: 5
+	item: (828654,), sup: 3
+	item: (572114,), sup: 5
+	item: (487637,), sup: 3
+	item: (661344,), sup: 6
+	item: (750486,), sup: 9
+	item: (317402,), sup: 3
+	item: (904035,), sup: 4
+	item: (854179,), sup: 4
+	item: (159550,), sup: 5
+	item: (915556,), sup: 12
+	item: (428774,), sup: 3
+	item: (602481,), sup: 3
+	item: (947980,), sup: 3
+	item: (548263,), sup: 7
+	item: (909860,), sup: 9
+	item: (809358,), sup: 3
+	item: (623284,), sup: 19
+	item: (646811,), sup: 4
+	item: (677111,), sup: 3
+	item: (727619,), sup: 4
+	item: (113924,), sup: 3
+	item: (185591,), sup: 6
+	item: (519365,), sup: 3
+	item: (449003,), sup: 5
+	item: (337362,), sup: 5
+	item: (153709,), sup: 3
+	item: (386132,), sup: 3
+	item: (968791,), sup: 6
+	item: (44066,), sup: 4
+	item: (193213,), sup: 3
+	item: (221934,), sup: 5
+	item: (1098992,), sup: 4
+	item: (60043,), sup: 3
+	item: (154991,), sup: 5
+	item: (158926,), sup: 6
+	item: (417679,), sup: 4
+	item: (769856,), sup: 3
+	item: (157814,), sup: 7
+	item: (175617,), sup: 3
+	item: (712234,), sup: 3
+	item: (773367,), sup: 3
+	item: (852284,), sup: 3
+	item: (603934,), sup: 7
+	item: (810376,), sup: 7
+	item: (999492,), sup: 6
+	item: (167274,), sup: 9
+	item: (473488,), sup: 8
+	item: (959879,), sup: 4
+	item: (1014739,), sup: 3
+	item: (555668,), sup: 6
+	item: (730742,), sup: 10
+	item: (634504,), sup: 3
+	item: (784251,), sup: 3
+	item: (498966,), sup: 19
+	item: (541601,), sup: 5
+	item: (281085,), sup: 4
+	item: (970632,), sup: 3
+	item: (586275,), sup: 5
+	item: (999241,), sup: 12
+	item: (388030,), sup: 4
+	item: (597514,), sup: 4
+	item: (595109,), sup: 3
+	item: (672870,), sup: 9
+	item: (429490,), sup: 6
+	item: (364621,), sup: 3
+	item: (785779,), sup: 3
+	item: (202112,), sup: 15
+	item: (102070,), sup: 6
+	item: (847479,), sup: 8
+	item: (224403,), sup: 3
+	item: (789149,), sup: 3
+	item: (606504,), sup: 3
+	item: (247747,), sup: 3
+	item: (468901,), sup: 7
+	item: (478495,), sup: 3
+	item: (816823,), sup: 3
+	item: (838864,), sup: 5
+	item: (1085996,), sup: 3
+	item: (673991,), sup: 18
+	item: (896850,), sup: 3
+	item: (505976,), sup: 3
+	item: (1107118,), sup: 4
+	item: (682809,), sup: 8
+	item: (624486,), sup: 5
+	item: (330490,), sup: 3
+	item: (907040,), sup: 9
+	item: (143446,), sup: 3
+	item: (603873,), sup: 3
+	item: (998780,), sup: 7
+	item: (779031,), sup: 5
+	item: (1059901,), sup: 9
+	item: (1020812,), sup: 4
+	item: (966421,), sup: 3
+	item: (770917,), sup: 4
+	item: (138847,), sup: 3
+	item: (394570,), sup: 3
+	item: (19429,), sup: 3
+	item: (1111456,), sup: 3
+	item: (944806,), sup: 6
+	item: (60783,), sup: 3
+	item: (845772,), sup: 6
+	item: (336114,), sup: 6
+	item: (644749,), sup: 3
+	item: (881587,), sup: 5
+	item: (34382,), sup: 8
+	item: (709173,), sup: 3
+	item: (476572,), sup: 6
+	item: (356187,), sup: 3
+	item: (542198,), sup: 7
+	item: (355138,), sup: 3
+	item: (989699,), sup: 4
+	item: (1111849,), sup: 5
+	item: (340375,), sup: 3
+	item: (366135,), sup: 14
+	item: (158754,), sup: 4
+	item: (200455,), sup: 12
+	item: (758699,), sup: 5
+	item: (356666,), sup: 4
+	item: (521878,), sup: 3
+	item: (929057,), sup: 11
+	item: (22792,), sup: 18
+	item: (549438,), sup: 5
+	item: (297161,), sup: 5
+	item: (943615,), sup: 7
+	item: (408458,), sup: 10
+	item: (1052197,), sup: 12
+	item: (446631,), sup: 3
+	item: (317171,), sup: 5
+	item: (1064078,), sup: 3
+	item: (52215,), sup: 11
+	item: (319874,), sup: 5
+	item: (1106243,), sup: 4
+	item: (530705,), sup: 5
+	item: (61356,), sup: 4
+	item: (458605,), sup: 11
+	item: (1033720,), sup: 7
+	item: (294446,), sup: 3
+	item: (939193,), sup: 3
+	item: (336367,), sup: 3
+	item: (447610,), sup: 17
+	item: (733224,), sup: 6
+	item: (329531,), sup: 3
+	item: (210865,), sup: 6
+	item: (579324,), sup: 21
+	item: (662600,), sup: 5
+	item: (283363,), sup: 5
+	item: (780670,), sup: 3
+	item: (583743,), sup: 3
+	item: (79558,), sup: 20
+	item: (1036683,), sup: 3
+	item: (608234,), sup: 3
+	item: (1047217,), sup: 8
+	item: (759266,), sup: 3
+	item: (289394,), sup: 3
+	item: (534105,), sup: 3
+	item: (895126,), sup: 4
+	item: (144015,), sup: 3
+	item: (104730,), sup: 5
+	item: (635456,), sup: 3
+	item: (728950,), sup: 3
+	item: (1006492,), sup: 3
+	item: (429619,), sup: 3
+	item: (375645,), sup: 5
+	item: (875038,), sup: 8
+	item: (536930,), sup: 6
+	item: (75588,), sup: 3
+	item: (867807,), sup: 4
+	item: (591959,), sup: 7
+	item: (9733,), sup: 4
+	item: (887889,), sup: 25
+	item: (369388,), sup: 3
+	item: (134867,), sup: 12
+	item: (341358,), sup: 3
+	item: (917391,), sup: 21
+	item: (143701,), sup: 3
+	item: (545751,), sup: 5
+	item: (877192,), sup: 9
+	item: (131006,), sup: 4
+	item: (762441,), sup: 3
+	item: (383204,), sup: 7
+	item: (298879,), sup: 3
+	item: (995586,), sup: 3
+	item: (60325,), sup: 4
+	item: (902347,), sup: 5
+	item: (988686,), sup: 3
+	item: (941209,), sup: 3
+	item: (624054,), sup: 7
+	item: (649281,), sup: 3
+	item: (983324,), sup: 11
+	item: (300407,), sup: 9
+	item: (536799,), sup: 4
+	item: (993987,), sup: 3
+	item: (999774,), sup: 4
+	item: (7556,), sup: 4
+	item: (542315,), sup: 26
+	item: (623482,), sup: 3
+	item: (116973,), sup: 6
+	item: (257912,), sup: 4
+	item: (1045779,), sup: 3
+	item: (910272,), sup: 5
+	item: (546709,), sup: 3
+	item: (704699,), sup: 12
+	item: (689658,), sup: 20
+	item: (497801,), sup: 6
+	item: (812479,), sup: 4
+	item: (836976,), sup: 6
+	item: (821964,), sup: 3
+	item: (531853,), sup: 32
+	item: (749636,), sup: 5
+	item: (47053,), sup: 4
+	item: (672729,), sup: 4
+	item: (491763,), sup: 3
+	item: (2920,), sup: 3
+	item: (659715,), sup: 3
+	item: (79711,), sup: 7
+	item: (85482,), sup: 9
+	item: (574992,), sup: 13
+	item: (617643,), sup: 5
+	item: (613657,), sup: 8
+	item: (264657,), sup: 3
+	item: (149650,), sup: 37
+	item: (184109,), sup: 4
+	item: (493563,), sup: 8
+	item: (57377,), sup: 3
+	item: (613594,), sup: 20
+	item: (181218,), sup: 3
+	item: (652925,), sup: 17
+	item: (756744,), sup: 3
+	item: (35134,), sup: 3
+	item: (36809,), sup: 6
+	item: (597758,), sup: 6
+	item: (996743,), sup: 4
+	item: (345381,), sup: 3
+	item: (921856,), sup: 7
+	item: (826955,), sup: 6
+	item: (43889,), sup: 4
+	item: (327948,), sup: 3
+	item: (63320,), sup: 4
+	item: (627535,), sup: 8
+	item: (139776,), sup: 9
+	item: (828865,), sup: 3
+	item: (270760,), sup: 3
+	item: (91908,), sup: 4
+	item: (832765,), sup: 6
+	item: (968389,), sup: 3
+	item: (56656,), sup: 3
+	item: (426987,), sup: 4
+	item: (896017,), sup: 4
+	item: (679890,), sup: 3
+	item: (778594,), sup: 4
+	item: (760056,), sup: 6
+	item: (1037614,), sup: 3
+	item: (482233,), sup: 5
+	item: (126548,), sup: 3
+	item: (509167,), sup: 4
+	item: (184534,), sup: 3
+	item: (67425,), sup: 4
+	item: (291735,), sup: 4
+	item: (402978,), sup: 8
+	item: (451400,), sup: 6
+	item: (92638,), sup: 9
+	item: (36671,), sup: 19
+	item: (370122,), sup: 6
+	item: (168369,), sup: 3
+	item: (909682,), sup: 18
+	item: (141069,), sup: 10
+	item: (843827,), sup: 12
+	item: (44377,), sup: 4
+	item: (829209,), sup: 8
+	item: (470042,), sup: 3
+	item: (1055040,), sup: 4
+	item: (960578,), sup: 4
+	item: (936627,), sup: 3
+	item: (322116,), sup: 3
+	item: (28895,), sup: 7
+	item: (329259,), sup: 7
+	item: (570193,), sup: 10
+	item: (451090,), sup: 3
+	item: (421688,), sup: 12
+	item: (954877,), sup: 3
+	item: (297696,), sup: 9
+	item: (147835,), sup: 4
+	item: (882330,), sup: 3
+	item: (289160,), sup: 4
+	item: (520894,), sup: 4
+	item: (107456,), sup: 9
+	item: (68555,), sup: 3
+	item: (794214,), sup: 5
+	item: (185585,), sup: 4
+	item: (654034,), sup: 6
+	item: (147751,), sup: 9
+	item: (32347,), sup: 3
+	item: (1056228,), sup: 8
+	item: (276339,), sup: 5
+	item: (199950,), sup: 5
+	item: (835628,), sup: 3
+	item: (33626,), sup: 3
+	item: (913947,), sup: 3
+	item: (876353,), sup: 4
+	item: (953858,), sup: 3
+	item: (92968,), sup: 10
+	item: (1012163,), sup: 4
+	item: (510697,), sup: 3
+	item: (20612,), sup: 3
+	item: (857887,), sup: 3
+	item: (318890,), sup: 4
+	item: (335941,), sup: 5
+	item: (94982,), sup: 5
+	item: (207249,), sup: 4
+	item: (88402,), sup: 6
+	item: (81901,), sup: 6
+	item: (340600,), sup: 15
+	item: (130004,), sup: 6
+	item: (809047,), sup: 3
+	item: (726266,), sup: 3
+	item: (1050555,), sup: 4
+	item: (850518,), sup: 8
+	item: (1052897,), sup: 6
+	item: (509820,), sup: 13
+	item: (789783,), sup: 4
+	item: (631714,), sup: 58
+	item: (423254,), sup: 8
+	item: (1024548,), sup: 4
+	item: (1050815,), sup: 15
+	item: (302887,), sup: 4
+	item: (581131,), sup: 6
+	item: (979404,), sup: 3
+	item: (918631,), sup: 17
+	item: (749645,), sup: 7
+	item: (537280,), sup: 5
+	item: (166235,), sup: 4
+	item: (172022,), sup: 8
+	item: (1013121,), sup: 3
+	item: (202629,), sup: 8
+	item: (1085737,), sup: 6
+	item: (28906,), sup: 5
+	item: (697989,), sup: 3
+	item: (273680,), sup: 3
+	item: (570283,), sup: 8
+	item: (993543,), sup: 5
+	item: (660013,), sup: 14
+	item: (66612,), sup: 7
+	item: (798547,), sup: 3
+	item: (1070918,), sup: 5
+	item: (709807,), sup: 3
+	item: (621263,), sup: 7
+	item: (111061,), sup: 3
+	item: (622742,), sup: 4
+	item: (990858,), sup: 6
+	item: (526050,), sup: 6
+	item: (570120,), sup: 4
+	item: (588195,), sup: 3
+	item: (405503,), sup: 14
+	item: (550949,), sup: 5
+	item: (537612,), sup: 5
+	item: (452557,), sup: 3
+	item: (704755,), sup: 4
+	item: (150809,), sup: 3
+	item: (218703,), sup: 3
+	item: (675034,), sup: 4
+	item: (606774,), sup: 5
+	item: (493761,), sup: 7
+	item: (1003998,), sup: 11
+	item: (521321,), sup: 4
+	item: (971502,), sup: 3
+	item: (534314,), sup: 4
+	item: (979024,), sup: 6
+	item: (352248,), sup: 4
+	item: (460116,), sup: 3
+	item: (1052968,), sup: 5
+	item: (164092,), sup: 3
+	item: (463805,), sup: 4
+	item: (857672,), sup: 3
+	item: (461065,), sup: 4
+	item: (1102399,), sup: 3
+	item: (329930,), sup: 5
+	item: (1092428,), sup: 7
+	item: (497459,), sup: 8
+	item: (553485,), sup: 8
+	item: (462937,), sup: 3
+	item: (654479,), sup: 3
+	item: (1032986,), sup: 6
+	item: (505244,), sup: 7
+	item: (297015,), sup: 4
+	item: (1058783,), sup: 3
+	item: (802562,), sup: 3
+	item: (97579,), sup: 3
+	item: (948435,), sup: 3
+	item: (851822,), sup: 3
+	item: (792057,), sup: 6
+	item: (7060,), sup: 5
+	item: (247612,), sup: 5
+	item: (847970,), sup: 3
+	item: (375944,), sup: 6
+	item: (130121,), sup: 10
+	item: (805247,), sup: 14
+	item: (270090,), sup: 6
+	item: (542117,), sup: 5
+	item: (813104,), sup: 3
+	item: (728779,), sup: 3
+	item: (629705,), sup: 3
+	item: (484391,), sup: 4
+	item: (821938,), sup: 8
+	item: (710616,), sup: 3
+	item: (178803,), sup: 3
+	item: (202393,), sup: 8
+	item: (775770,), sup: 8
+	item: (1006837,), sup: 3
+	item: (823873,), sup: 5
+	item: (1101304,), sup: 3
+	item: (723806,), sup: 5
+	item: (698244,), sup: 11
+	item: (559647,), sup: 3
+	item: (884906,), sup: 3
+	item: (605648,), sup: 4
+	item: (41709,), sup: 3
+	item: (705966,), sup: 4
+	item: (604247,), sup: 15
+	item: (1031162,), sup: 4
+	item: (379579,), sup: 4
+	item: (1053014,), sup: 9
+	item: (512023,), sup: 4
+	item: (222882,), sup: 4
+	item: (104035,), sup: 3
+	item: (154878,), sup: 5
+	item: (940324,), sup: 3
+	item: (189002,), sup: 4
+	item: (34059,), sup: 5
+	item: (400945,), sup: 3
+	item: (66034,), sup: 4
+	item: (583565,), sup: 13
+	item: (47640,), sup: 4
+	item: (500941,), sup: 4
+	item: (647284,), sup: 16
+	item: (1038303,), sup: 4
+	item: (117592,), sup: 4
+	item: (408823,), sup: 3
+	item: (1030146,), sup: 8
+	item: (827806,), sup: 3
+	item: (214057,), sup: 3
+	item: (233479,), sup: 4
+	item: (475487,), sup: 3
+	item: (940010,), sup: 6
+	item: (671760,), sup: 5
+	item: (632491,), sup: 3
+	item: (324627,), sup: 3
+	item: (1037265,), sup: 3
+	item: (618424,), sup: 4
+	item: (982905,), sup: 14
+	item: (323130,), sup: 6
+	item: (363041,), sup: 3
+	item: (707747,), sup: 7
+	item: (779070,), sup: 4
+	item: (282580,), sup: 4
+	item: (859941,), sup: 9
+	item: (868626,), sup: 3
+	item: (480306,), sup: 3
+	item: (495641,), sup: 6
+	item: (683343,), sup: 5
+	item: (1078901,), sup: 3
+	item: (309816,), sup: 6
+	item: (889499,), sup: 12
+	item: (280886,), sup: 4
+	item: (1000028,), sup: 4
+	item: (853277,), sup: 6
+	item: (179173,), sup: 3
+	item: (1104745,), sup: 3
+	item: (787334,), sup: 6
+	item: (990380,), sup: 3
+	item: (574279,), sup: 4
+	item: (457170,), sup: 3
+	item: (157843,), sup: 3
+	item: (719526,), sup: 3
+	item: (1088277,), sup: 3
+	item: (24992,), sup: 7
+	item: (250161,), sup: 5
+	item: (757143,), sup: 4
+	item: (294679,), sup: 13
+	item: (76095,), sup: 3
+	item: (32395,), sup: 8
+	item: (898279,), sup: 5
+	item: (795396,), sup: 11
+	item: (385230,), sup: 3
+	item: (926111,), sup: 5
+	item: (762688,), sup: 6
+	item: (657883,), sup: 5
+	item: (383712,), sup: 8
+	item: (907420,), sup: 6
+	item: (562626,), sup: 4
+	item: (995048,), sup: 3
+	item: (1070211,), sup: 3
+	item: (699166,), sup: 3
+	item: (568031,), sup: 6
+	item: (508266,), sup: 3
+	item: (753040,), sup: 5
+	item: (475179,), sup: 5
+	item: (624326,), sup: 3
+	item: (178274,), sup: 7
+	item: (29357,), sup: 4
+	item: (526585,), sup: 11
+	item: (736916,), sup: 5
+	item: (341295,), sup: 4
+	item: (170938,), sup: 3
+	item: (23688,), sup: 4
+	item: (845841,), sup: 12
+	item: (1111969,), sup: 9
+	item: (460642,), sup: 4
+	item: (810174,), sup: 5
+	item: (131913,), sup: 3
+	item: (522724,), sup: 3
+	item: (942602,), sup: 3
+	item: (169100,), sup: 4
+	item: (844919,), sup: 3
+	item: (362191,), sup: 5
+	item: (736602,), sup: 4
+	item: (879643,), sup: 3
+	item: (831452,), sup: 16
+	item: (862210,), sup: 3
+	item: (1060509,), sup: 3
+	item: (113603,), sup: 7
+	item: (949854,), sup: 3
+	item: (26475,), sup: 9
+	item: (271249,), sup: 3
+	item: (677420,), sup: 6
+	item: (1023175,), sup: 3
+	item: (1104598,), sup: 4
+	item: (704313,), sup: 4
+	item: (417530,), sup: 3
+	item: (848252,), sup: 3
+	item: (636454,), sup: 4
+	item: (60834,), sup: 4
+	item: (483389,), sup: 3
+	item: (789859,), sup: 3
+	item: (1066261,), sup: 4
+	item: (350601,), sup: 4
+	item: (629796,), sup: 4
+	item: (406207,), sup: 3
+	item: (539552,), sup: 8
+	item: (7846,), sup: 5
+	item: (705841,), sup: 4
+	item: (192103,), sup: 5
+	item: (95474,), sup: 4
+	item: (522893,), sup: 3
+	item: (327897,), sup: 5
+	item: (302294,), sup: 4
+	item: (1072399,), sup: 4
+	item: (1020826,), sup: 6
+	item: (595928,), sup: 3
+	item: (82779,), sup: 3
+	item: (686582,), sup: 24
+	item: (253825,), sup: 7
+	item: (931944,), sup: 3
+	item: (772842,), sup: 5
+	item: (593323,), sup: 3
+	item: (426054,), sup: 13
+	item: (23074,), sup: 3
+	item: (543122,), sup: 5
+	item: (856760,), sup: 3
+	item: (853741,), sup: 3
+	item: (326613,), sup: 3
+	item: (881915,), sup: 7
+	item: (671970,), sup: 4
+	item: (1066877,), sup: 5
+	item: (851208,), sup: 3
+	item: (965119,), sup: 22
+	item: (475018,), sup: 5
+	item: (690352,), sup: 4
+	item: (106315,), sup: 3
+	item: (783846,), sup: 3
+	item: (786272,), sup: 8
+	item: (511500,), sup: 4
+	item: (258509,), sup: 11
+	item: (202521,), sup: 3
+	item: (237647,), sup: 5
+	item: (833947,), sup: 3
+	item: (1073143,), sup: 3
+	item: (515411,), sup: 4
+	item: (564904,), sup: 5
+	item: (732261,), sup: 4
+	item: (969375,), sup: 3
+	item: (1006160,), sup: 8
+	item: (82797,), sup: 3
+	item: (1048467,), sup: 3
+	item: (100537,), sup: 5
+	item: (316352,), sup: 4
+	item: (695829,), sup: 7
+	item: (158523,), sup: 3
+	item: (224689,), sup: 6
+	item: (693345,), sup: 9
+	item: (495767,), sup: 3
+	item: (109950,), sup: 5
+	item: (547903,), sup: 3
+	item: (196592,), sup: 15
+	item: (691889,), sup: 8
+	item: (154599,), sup: 3
+	item: (1016589,), sup: 10
+	item: (613658,), sup: 3
+	item: (1039579,), sup: 4
+	item: (508790,), sup: 5
+	item: (493372,), sup: 7
+	item: (393783,), sup: 3
+	item: (654268,), sup: 3
+	item: (465732,), sup: 8
+	item: (341803,), sup: 4
+	item: (695750,), sup: 35
+	item: (266059,), sup: 3
+	item: (560184,), sup: 4
+	item: (243759,), sup: 4
+	item: (189781,), sup: 3
+	item: (437216,), sup: 9
+	item: (1052988,), sup: 4
+	item: (420450,), sup: 22
+	item: (956040,), sup: 4
+	item: (752931,), sup: 3
+	item: (806116,), sup: 5
+	item: (855591,), sup: 7
+	item: (816948,), sup: 3
+	item: (155135,), sup: 15
+	item: (501493,), sup: 3
+	item: (504603,), sup: 3
+	item: (891318,), sup: 5
+	item: (809866,), sup: 4
+	item: (116499,), sup: 4
+	item: (44581,), sup: 3
+	item: (177183,), sup: 8
+	item: (902801,), sup: 3
+	item: (676807,), sup: 3
+	item: (499630,), sup: 5
+	item: (418361,), sup: 11
+	item: (655215,), sup: 8
+	item: (865786,), sup: 3
+	item: (187936,), sup: 7
+	item: (957434,), sup: 3
+	item: (899607,), sup: 4
+	item: (127780,), sup: 3
+	item: (596415,), sup: 3
+	item: (790695,), sup: 3
+	item: (517542,), sup: 6
+	item: (218471,), sup: 3
+	item: (203762,), sup: 3
+	item: (951320,), sup: 8
+	item: (281267,), sup: 4
+	item: (711886,), sup: 10
+	item: (226527,), sup: 3
+	item: (163125,), sup: 5
+	item: (1086400,), sup: 4
+	item: (408822,), sup: 3
+	item: (1004098,), sup: 17
+	item: (921448,), sup: 3
+	item: (15262,), sup: 3
+	item: (831017,), sup: 4
+	item: (637791,), sup: 3
+	item: (164330,), sup: 3
+	item: (968581,), sup: 3
+	item: (573611,), sup: 3
+	item: (796486,), sup: 37
+	item: (248330,), sup: 8
+	item: (873991,), sup: 3
+	item: (288225,), sup: 17
+	item: (767293,), sup: 3
+	item: (586711,), sup: 3
+	item: (144736,), sup: 5
+	item: (821948,), sup: 3
+	item: (81388,), sup: 3
+	item: (390819,), sup: 5
+	item: (214546,), sup: 3
+	item: (306738,), sup: 4
+	item: (246989,), sup: 3
+	item: (446756,), sup: 3
+	item: (500211,), sup: 3
+	item: (1009550,), sup: 10
+	item: (129561,), sup: 3
+	item: (1070927,), sup: 3
+	item: (601243,), sup: 13
+	item: (1036008,), sup: 4
+	item: (203201,), sup: 3
+	item: (447050,), sup: 5
+	item: (554408,), sup: 5
+	item: (510724,), sup: 6
+	item: (516511,), sup: 3
+	item: (689276,), sup: 5
+	item: (1008594,), sup: 3
+	item: (1023866,), sup: 3
+	item: (824597,), sup: 3
+	item: (351136,), sup: 4
+	item: (609841,), sup: 3
+	item: (469857,), sup: 3
+	item: (1026594,), sup: 7
+	item: (12477,), sup: 7
+	item: (399046,), sup: 3
+	item: (433253,), sup: 4
+	item: (554720,), sup: 9
+	item: (727179,), sup: 3
+	item: (504753,), sup: 3
+	item: (413415,), sup: 9
+	item: (1104653,), sup: 3
+	item: (219021,), sup: 4
+	item: (140981,), sup: 3
+	item: (1107574,), sup: 14
+	item: (1037610,), sup: 3
+	item: (688066,), sup: 5
+	item: (100584,), sup: 7
+	item: (396931,), sup: 4
+	item: (510889,), sup: 3
+	item: (160991,), sup: 3
+	item: (203626,), sup: 3
+	item: (42896,), sup: 4
+	item: (387627,), sup: 3
+	item: (1005968,), sup: 3
+	item: (282092,), sup: 3
+	item: (229746,), sup: 11
+	item: (525842,), sup: 5
+	item: (748717,), sup: 5
+	item: (137213,), sup: 3
+	item: (119545,), sup: 6
+	item: (145556,), sup: 3
+	item: (229167,), sup: 17
+	item: (101768,), sup: 35
+	item: (686870,), sup: 3
+	item: (207575,), sup: 3
+	item: (368994,), sup: 3
+	item: (813053,), sup: 14
+	item: (535944,), sup: 5
+	item: (256241,), sup: 8
+	item: (773092,), sup: 3
+	item: (228211,), sup: 6
+	item: (729358,), sup: 4
+	item: (224757,), sup: 15
+	item: (426880,), sup: 3
+	item: (914971,), sup: 3
+	item: (635713,), sup: 10
+	item: (612828,), sup: 3
+	item: (34973,), sup: 3
+	item: (452702,), sup: 3
+	item: (601833,), sup: 6
+	item: (1071903,), sup: 6
+	item: (237931,), sup: 3
+	item: (517894,), sup: 7
+	item: (925826,), sup: 4
+	item: (378567,), sup: 4
+	item: (515410,), sup: 5
+	item: (979949,), sup: 3
+	item: (861816,), sup: 4
+	item: (302099,), sup: 3
+	item: (729774,), sup: 15
+	item: (452921,), sup: 3
+	item: (24532,), sup: 3
+	item: (861728,), sup: 4
+	item: (882938,), sup: 4
+	item: (564584,), sup: 3
+	item: (487665,), sup: 6
+	item: (114967,), sup: 4
+	item: (255906,), sup: 4
+	item: (1078153,), sup: 3
+	item: (737694,), sup: 3
+	item: (531647,), sup: 4
+	item: (244848,), sup: 3
+	item: (125094,), sup: 4
+	item: (974641,), sup: 6
+	item: (771532,), sup: 5
+	item: (1058097,), sup: 9
+	item: (267734,), sup: 6
+	item: (530191,), sup: 4
+	item: (159130,), sup: 3
+	item: (83946,), sup: 8
+	item: (979639,), sup: 4
+	item: (984361,), sup: 3
+	item: (973070,), sup: 4
+	item: (216671,), sup: 4
+	item: (608901,), sup: 3
+	item: (278800,), sup: 3
+	item: (272966,), sup: 3
+	item: (908551,), sup: 4
+	item: (914989,), sup: 6
+	item: (462008,), sup: 3
+	item: (985582,), sup: 13
+	item: (187090,), sup: 3
+	item: (92335,), sup: 5
+	item: (175930,), sup: 12
+	item: (250833,), sup: 20
+	item: (1039137,), sup: 3
+	item: (217532,), sup: 4
+	item: (186762,), sup: 7
+	item: (846155,), sup: 5
+	item: (695975,), sup: 7
+	item: (25906,), sup: 4
+	item: (1000691,), sup: 3
+	item: (924302,), sup: 51
+	item: (1005492,), sup: 3
+	item: (813647,), sup: 4
+	item: (988059,), sup: 3
+	item: (620086,), sup: 4
+	item: (1077122,), sup: 3
+	item: (1069597,), sup: 5
+	item: (526812,), sup: 12
+	item: (61251,), sup: 5
+	item: (668220,), sup: 6
+	item: (365727,), sup: 3
+	item: (547626,), sup: 4
+	item: (584427,), sup: 3
+	item: (1009345,), sup: 3
+	item: (823367,), sup: 6
+	item: (300754,), sup: 8
+	item: (111608,), sup: 4
+	item: (687150,), sup: 7
+	item: (4079,), sup: 3
+	item: (418735,), sup: 15
+	item: (559125,), sup: 5
+	item: (640808,), sup: 8
+	item: (111931,), sup: 6
+	item: (351841,), sup: 4
+	item: (258275,), sup: 5
+	item: (214591,), sup: 14
+	item: (458303,), sup: 4
+	item: (1042928,), sup: 3
+	item: (294795,), sup: 3
+	item: (735739,), sup: 12
+	item: (713880,), sup: 3
+	item: (686899,), sup: 58
+	item: (786894,), sup: 6
+	item: (672543,), sup: 6
+	item: (785845,), sup: 3
+	item: (497371,), sup: 3
+	item: (376182,), sup: 4
+	item: (775034,), sup: 9
+	item: (1105577,), sup: 4
+	item: (247108,), sup: 4
+	item: (87045,), sup: 4
+	item: (200281,), sup: 5
+	item: (159980,), sup: 5
+	item: (1058439,), sup: 13
+	item: (628280,), sup: 4
+	item: (934766,), sup: 3
+	item: (876436,), sup: 4
+	item: (470869,), sup: 4
+	item: (740886,), sup: 3
+	item: (1103009,), sup: 11
+	item: (197730,), sup: 3
+	item: (1095724,), sup: 17
+	item: (149283,), sup: 5
+	item: (466366,), sup: 5
+	item: (713482,), sup: 4
+	item: (59813,), sup: 3
+	item: (688843,), sup: 4
+	item: (933873,), sup: 3
+	item: (1017165,), sup: 12
+	item: (1008740,), sup: 3
+	item: (1109619,), sup: 4
+	item: (834541,), sup: 5
+	item: (729396,), sup: 3
+	item: (235937,), sup: 4
+	item: (930037,), sup: 4
+	item: (924929,), sup: 3
+	item: (817410,), sup: 4
+	item: (1003421,), sup: 4
+	item: (717352,), sup: 3
+	item: (110430,), sup: 3
+	item: (21993,), sup: 5
+	item: (40479,), sup: 7
+	item: (316586,), sup: 5
+	item: (15173,), sup: 5
+	item: (543033,), sup: 8
+	item: (823441,), sup: 4
+	item: (105927,), sup: 3
+	item: (313069,), sup: 5
+	item: (679288,), sup: 3
+	item: (340755,), sup: 12
+	item: (537942,), sup: 6
+	item: (933500,), sup: 3
+	item: (218135,), sup: 4
+	item: (925571,), sup: 95
+	item: (979261,), sup: 14
+	item: (158476,), sup: 3
+	item: (171300,), sup: 3
+	item: (225312,), sup: 7
+	item: (62320,), sup: 3
+	item: (190731,), sup: 6
+	item: (59596,), sup: 13
+	item: (367501,), sup: 10
+	item: (923460,), sup: 18
+	item: (386227,), sup: 3
+	item: (199502,), sup: 5
+	item: (160217,), sup: 4
+	item: (472180,), sup: 3
+	item: (847327,), sup: 13
+	item: (304949,), sup: 6
+	item: (16475,), sup: 6
+	item: (985527,), sup: 3
+	item: (760168,), sup: 3
+	item: (441588,), sup: 16
+	item: (331783,), sup: 5
+	item: (261421,), sup: 5
+	item: (247379,), sup: 5
+	item: (134382,), sup: 6
+	item: (69551,), sup: 4
+	item: (139834,), sup: 6
+	item: (376672,), sup: 3
+	item: (394747,), sup: 8
+	item: (1026966,), sup: 4
+	item: (737443,), sup: 4
+	item: (263797,), sup: 5
+	item: (28105,), sup: 5
+	item: (820734,), sup: 15
+	item: (742181,), sup: 13
+	item: (182704,), sup: 3
+	item: (920651,), sup: 22
+	item: (549769,), sup: 5
+	item: (191131,), sup: 3
+	item: (650431,), sup: 3
+	item: (385985,), sup: 14
+	item: (104028,), sup: 22
+	item: (1031415,), sup: 3
+	item: (712616,), sup: 4
+	item: (673134,), sup: 10
+	item: (1023530,), sup: 3
+	item: (791749,), sup: 3
+	item: (400496,), sup: 5
+	item: (59921,), sup: 3
+	item: (810450,), sup: 3
+	item: (613523,), sup: 12
+	item: (489913,), sup: 5
+	item: (269396,), sup: 3
+	item: (651029,), sup: 3
+	item: (1005623,), sup: 5
+	item: (574138,), sup: 3
+	item: (426391,), sup: 4
+	item: (327601,), sup: 3
+	item: (168524,), sup: 3
+	item: (516823,), sup: 4
+	item: (527501,), sup: 4
+	item: (286838,), sup: 4
+	item: (791351,), sup: 8
+	item: (1037032,), sup: 3
+	item: (562538,), sup: 5
+	item: (670469,), sup: 11
+	item: (184657,), sup: 6
+	item: (593287,), sup: 19
+	item: (472686,), sup: 3
+	item: (445138,), sup: 6
+	item: (520789,), sup: 4
+	item: (163226,), sup: 7
+	item: (543586,), sup: 3
+	item: (717309,), sup: 5
+	item: (366645,), sup: 7
+	item: (646628,), sup: 4
+	item: (765998,), sup: 13
+	item: (281415,), sup: 4
+	item: (1064640,), sup: 4
+	item: (372519,), sup: 3
+	item: (632179,), sup: 3
+	item: (836660,), sup: 8
+	item: (1055439,), sup: 4
+	item: (233818,), sup: 4
+	item: (964597,), sup: 6
+	item: (579254,), sup: 3
+	item: (460407,), sup: 5
+	item: (637075,), sup: 4
+	item: (66205,), sup: 3
+	item: (825640,), sup: 3
+	item: (1066192,), sup: 4
+	item: (977452,), sup: 3
+	item: (356551,), sup: 3
+	item: (275659,), sup: 4
+	item: (940500,), sup: 4
+	item: (902895,), sup: 3
+	item: (649271,), sup: 21
+	item: (83324,), sup: 5
+	item: (879304,), sup: 3
+	item: (97045,), sup: 8
+	item: (669342,), sup: 8
+	item: (267237,), sup: 3
+	item: (1074539,), sup: 3
+	item: (887867,), sup: 3
+	item: (24205,), sup: 3
+	item: (1035204,), sup: 6
+	item: (159310,), sup: 5
+	item: (441204,), sup: 3
+	item: (282207,), sup: 4
+	item: (88629,), sup: 8
+	item: (959960,), sup: 4
+	item: (929270,), sup: 3
+	item: (82754,), sup: 6
+	item: (719325,), sup: 8
+	item: (700201,), sup: 5
+	item: (54724,), sup: 6
+	item: (131436,), sup: 3
+	item: (444167,), sup: 4
+	item: (933203,), sup: 3
+	item: (458709,), sup: 4
+	item: (801019,), sup: 5
+	item: (237626,), sup: 9
+	item: (211900,), sup: 7
+	item: (214242,), sup: 3
+	item: (364808,), sup: 3
+	item: (1100533,), sup: 25
+	item: (366436,), sup: 6
+	item: (491007,), sup: 3
+	item: (529290,), sup: 4
+	item: (168779,), sup: 9
+	item: (18918,), sup: 5
+	item: (85810,), sup: 3
+	item: (353422,), sup: 7
+	item: (1052726,), sup: 4
+	item: (198337,), sup: 3
+	item: (1099013,), sup: 7
+	item: (735618,), sup: 4
+	item: (461123,), sup: 3
+	item: (466910,), sup: 4
+	item: (772100,), sup: 9
+	item: (886058,), sup: 5
+	item: (907889,), sup: 3
+	item: (556624,), sup: 5
+	item: (1063779,), sup: 12
+	item: (87980,), sup: 3
+	item: (631316,), sup: 6
+	item: (738862,), sup: 3
+	item: (938836,), sup: 13
+	item: (834031,), sup: 4
+	item: (182447,), sup: 3
+	item: (814907,), sup: 3
+	item: (415190,), sup: 3
+	item: (741361,), sup: 7
+	item: (47811,), sup: 9
+	item: (1013450,), sup: 6
+	item: (1106609,), sup: 12
+	item: (339943,), sup: 3
+	item: (1013043,), sup: 5
+	item: (1006728,), sup: 12
+	item: (821173,), sup: 3
+	item: (893147,), sup: 3
+	item: (100214,), sup: 4
+	item: (103906,), sup: 8
+	item: (5020,), sup: 5
+	item: (980535,), sup: 8
+	item: (531650,), sup: 5
+	item: (855939,), sup: 12
+	item: (48964,), sup: 4
+	item: (975302,), sup: 3
+	item: (322284,), sup: 4
+	item: (914106,), sup: 15
+	item: (684000,), sup: 7
+	item: (152187,), sup: 3
+	item: (1003169,), sup: 4
+	item: (783676,), sup: 7
+	item: (187351,), sup: 4
+	item: (423331,), sup: 4
+	item: (357629,), sup: 4
+	item: (896170,), sup: 9
+	item: (707787,), sup: 3
+	item: (787302,), sup: 3
+	item: (1056652,), sup: 16
+	item: (637403,), sup: 12
+	item: (819021,), sup: 3
+	item: (54628,), sup: 5
+	item: (956653,), sup: 4
+	item: (853901,), sup: 17
+	item: (710427,), sup: 3
+	item: (489180,), sup: 4
+	item: (515447,), sup: 3
+	item: (852738,), sup: 4
+	item: (252317,), sup: 5
+	item: (924712,), sup: 3
+	item: (969054,), sup: 5
+	item: (227359,), sup: 3
+	item: (398661,), sup: 4
+	item: (529414,), sup: 5
+	item: (724418,), sup: 4
+	item: (153543,), sup: 3
+	item: (292409,), sup: 16
+Item set length: 2
+	item: (266291, 381224), sup: 3
+	item: (163543, 1038303), sup: 4
+	item: (855939, 1107574), sup: 4
+	item: (784251, 974641), sup: 3
+	item: (15496, 517942), sup: 3
+	item: (618424, 953360), sup: 3
+	item: (172022, 674704), sup: 3
+	item: (810450, 845841), sup: 3
+	item: (607911, 949127), sup: 3
+	item: (287710, 990858), sup: 3
+	item: (104293, 930037), sup: 3
+	item: (652925, 925571), sup: 4
+	item: (282032, 327897), sup: 3
+	item: (593323, 1056228), sup: 3
+	item: (300754, 1003998), sup: 6
+	item: (853741, 896170), sup: 3
+	item: (210671, 367662), sup: 3
+	item: (36671, 674858), sup: 3
+	item: (831452, 1073970), sup: 15
+	item: (730742, 951320), sup: 4
+	item: (375903, 515410), sup: 3
+	item: (52817, 508266), sup: 3
+	item: (515410, 969067), sup: 3
+	item: (6587, 119545), sup: 4
+	item: (613942, 909331), sup: 3
+	item: (458605, 887889), sup: 10
+	item: (784251, 886058), sup: 3
+	item: (185591, 950825), sup: 5
+	item: (26475, 159310), sup: 4
+	item: (12477, 577763), sup: 3
+	item: (366436, 547970), sup: 3
+	item: (1038303, 1071903), sup: 4
+	item: (197218, 575966), sup: 3
+	item: (221934, 525842), sup: 3
+	item: (163543, 979024), sup: 4
+	item: (79558, 1019368), sup: 11
+	item: (37654, 1107574), sup: 3
+	item: (423331, 1077697), sup: 4
+	item: (662931, 784251), sup: 3
+	item: (25906, 185585), sup: 3
+	item: (631714, 692203), sup: 3
+	item: (400945, 745251), sup: 3
+	item: (761073, 1056652), sup: 10
+	item: (139834, 536930), sup: 5
+	item: (155130, 613523), sup: 4
+	item: (304998, 554408), sup: 3
+	item: (510724, 524650), sup: 6
+	item: (79558, 1073970), sup: 16
+	item: (979024, 1038303), sup: 4
+	item: (745251, 885357), sup: 3
+	item: (292440, 431440), sup: 5
+	item: (803949, 948890), sup: 3
+	item: (159310, 618424), sup: 3
+	item: (831452, 1019368), sup: 11
+	item: (246150, 1077268), sup: 3
+	item: (210865, 602660), sup: 3
+	item: (375903, 915181), sup: 4
+	item: (366645, 796486), sup: 3
+	item: (340375, 796486), sup: 3
+	item: (444401, 573019), sup: 4
+	item: (167274, 556624), sup: 5
+	item: (832765, 865616), sup: 6
+	item: (79558, 831452), sup: 13
+	item: (95474, 595651), sup: 3
+	item: (886058, 974641), sup: 4
+	item: (159310, 1073372), sup: 3
+	item: (570120, 1052897), sup: 4
+	item: (533703, 601243), sup: 3
+	item: (52215, 844919), sup: 3
+	item: (855939, 995048), sup: 3
+	item: (352468, 649596), sup: 3
+	item: (1006837, 1013450), sup: 3
+	item: (97045, 104293), sup: 3
+	item: (88402, 156338), sup: 4
+	item: (758699, 951634), sup: 3
+	item: (200455, 489913), sup: 3
+	item: (489180, 561733), sup: 3
+	item: (114456, 202112), sup: 3
+	item: (88020, 268153), sup: 3
+	item: (159310, 953360), sup: 4
+	item: (618424, 1073372), sup: 3
+	item: (247612, 300407), sup: 5
+	item: (607911, 1110317), sup: 3
+	item: (504603, 547532), sup: 3
+	item: (119545, 665369), sup: 4
+	item: (340600, 855108), sup: 4
+	item: (61356, 810450), sup: 3
+	item: (630851, 892434), sup: 4
+	item: (26475, 1073372), sup: 3
+	item: (1019368, 1073970), sup: 12
+	item: (15445, 129323), sup: 3
+	item: (80565, 654034), sup: 3
+	item: (282032, 289394), sup: 3
+	item: (80260, 475179), sup: 3
+	item: (37654, 855939), sup: 3
+	item: (672729, 809866), sup: 3
+	item: (949127, 1110317), sup: 3
+	item: (163543, 1071903), sup: 4
+	item: (408458, 548263), sup: 5
+	item: (989699, 1011562), sup: 3
+	item: (6587, 665369), sup: 4
+	item: (953360, 1073372), sup: 3
+	item: (61356, 845841), sup: 3
+	item: (218211, 1013043), sup: 5
+	item: (26475, 618424), sup: 3
+	item: (662931, 886058), sup: 3
+	item: (606774, 1111969), sup: 3
+	item: (547903, 1003169), sup: 3
+	item: (26475, 953360), sup: 4
+	item: (52215, 672543), sup: 6
+	item: (82058, 408458), sup: 3
+	item: (662931, 974641), sup: 3
+	item: (294679, 847383), sup: 4
+	item: (21993, 493372), sup: 3
+	item: (613523, 1086725), sup: 3
+	item: (129323, 849434), sup: 3
+	item: (15496, 868626), sup: 3
+	item: (33976, 118742), sup: 3
+	item: (168779, 200281), sup: 5
+	item: (979024, 1071903), sup: 4
+	item: (738862, 1046248), sup: 3
+Item set length: 3
+	item: (159310, 618424, 953360), sup: 3
+	item: (26475, 159310, 618424), sup: 3
+	item: (618424, 953360, 1073372), sup: 3
+	item: (26475, 159310, 1073372), sup: 3
+	item: (79558, 1019368, 1073970), sup: 10
+	item: (26475, 953360, 1073372), sup: 3
+	item: (26475, 618424, 953360), sup: 3
+	item: (163543, 979024, 1038303), sup: 4
+	item: (37654, 855939, 1107574), sup: 3
+	item: (831452, 1019368, 1073970), sup: 11
+	item: (79558, 831452, 1019368), sup: 10
+	item: (662931, 886058, 974641), sup: 3
+	item: (79558, 831452, 1073970), sup: 13
+	item: (163543, 1038303, 1071903), sup: 4
+	item: (159310, 618424, 1073372), sup: 3
+	item: (61356, 810450, 845841), sup: 3
+	item: (784251, 886058, 974641), sup: 3
+	item: (662931, 784251, 886058), sup: 3
+	item: (26475, 159310, 953360), sup: 4
+	item: (607911, 949127, 1110317), sup: 3
+	item: (26475, 618424, 1073372), sup: 3
+	item: (979024, 1038303, 1071903), sup: 4
+	item: (163543, 979024, 1071903), sup: 4
+	item: (662931, 784251, 974641), sup: 3
+	item: (6587, 119545, 665369), sup: 4
+	item: (159310, 953360, 1073372), sup: 3
+Item set length: 4
+	item: (26475, 159310, 618424, 953360), sup: 3
+	item: (26475, 618424, 953360, 1073372), sup: 3
+	item: (26475, 159310, 618424, 1073372), sup: 3
+	item: (79558, 831452, 1019368, 1073970), sup: 10
+	item: (26475, 159310, 953360, 1073372), sup: 3
+	item: (662931, 784251, 886058, 974641), sup: 3
+	item: (163543, 979024, 1038303, 1071903), sup: 4
+	item: (159310, 618424, 953360, 1073372), sup: 3
+Item set length: 5
+	item: (26475, 159310, 618424, 953360, 1073372), sup: 3
+
+------------------------ RULES ------------------------
+rule: (159310,) ==> (26475, 618424, 953360, 1073372), confidence: 0.6
+rule: (618424,) ==> (26475, 159310, 953360, 1073372), confidence: 0.75
+rule: (953360,) ==> (26475, 159310, 618424, 1073372), confidence: 0.75
+rule: (1073372,) ==> (26475, 159310, 618424, 953360), confidence: 1.0
+rule: (26475, 159310) ==> (618424, 953360, 1073372), confidence: 0.75
+rule: (26475, 618424) ==> (159310, 953360, 1073372), confidence: 1.0
+rule: (26475, 953360) ==> (159310, 618424, 1073372), confidence: 0.75
+rule: (26475, 1073372) ==> (159310, 618424, 953360), confidence: 1.0
+rule: (159310, 618424) ==> (26475, 953360, 1073372), confidence: 1.0
+rule: (159310, 953360) ==> (26475, 618424, 1073372), confidence: 0.75
+rule: (159310, 1073372) ==> (26475, 618424, 953360), confidence: 1.0
+rule: (618424, 953360) ==> (26475, 159310, 1073372), confidence: 1.0
+rule: (618424, 1073372) ==> (26475, 159310, 953360), confidence: 1.0
+rule: (953360, 1073372) ==> (26475, 159310, 618424), confidence: 1.0
+rule: (26475, 159310, 618424) ==> (953360, 1073372), confidence: 1.0
+rule: (26475, 159310, 953360) ==> (618424, 1073372), confidence: 0.75
+rule: (26475, 159310, 1073372) ==> (618424, 953360), confidence: 1.0
+rule: (26475, 618424, 953360) ==> (159310, 1073372), confidence: 1.0
+rule: (26475, 618424, 1073372) ==> (159310, 953360), confidence: 1.0
+rule: (26475, 953360, 1073372) ==> (159310, 618424), confidence: 1.0
+rule: (159310, 618424, 953360) ==> (26475, 1073372), confidence: 1.0
+rule: (159310, 618424, 1073372) ==> (26475, 953360), confidence: 1.0
+rule: (159310, 953360, 1073372) ==> (26475, 618424), confidence: 1.0
+rule: (618424, 953360, 1073372) ==> (26475, 159310), confidence: 1.0
+rule: (26475, 159310, 618424, 953360) ==> (1073372,), confidence: 1.0
+rule: (26475, 159310, 618424, 1073372) ==> (953360,), confidence: 1.0
+rule: (26475, 159310, 953360, 1073372) ==> (618424,), confidence: 1.0
+rule: (26475, 618424, 953360, 1073372) ==> (159310,), confidence: 1.0
+rule: (159310, 618424, 953360, 1073372) ==> (26475,), confidence: 1.0
+rule: (159310,) ==> (26475, 618424, 953360), confidence: 0.6
+rule: (618424,) ==> (26475, 159310, 953360), confidence: 0.75
+rule: (953360,) ==> (26475, 159310, 618424), confidence: 0.75
+rule: (26475, 159310) ==> (618424, 953360), confidence: 0.75
+rule: (26475, 618424) ==> (159310, 953360), confidence: 1.0
+rule: (26475, 953360) ==> (159310, 618424), confidence: 0.75
+rule: (159310, 618424) ==> (26475, 953360), confidence: 1.0
+rule: (159310, 953360) ==> (26475, 618424), confidence: 0.75
+rule: (618424, 953360) ==> (26475, 159310), confidence: 1.0
+rule: (26475, 159310, 618424) ==> (953360,), confidence: 1.0
+rule: (26475, 159310, 953360) ==> (618424,), confidence: 0.75
+rule: (26475, 618424, 953360) ==> (159310,), confidence: 1.0
+rule: (159310, 618424, 953360) ==> (26475,), confidence: 1.0
+rule: (618424,) ==> (26475, 953360, 1073372), confidence: 0.75
+rule: (953360,) ==> (26475, 618424, 1073372), confidence: 0.75
+rule: (1073372,) ==> (26475, 618424, 953360), confidence: 1.0
+rule: (26475, 618424) ==> (953360, 1073372), confidence: 1.0
+rule: (26475, 953360) ==> (618424, 1073372), confidence: 0.75
+rule: (26475, 1073372) ==> (618424, 953360), confidence: 1.0
+rule: (618424, 953360) ==> (26475, 1073372), confidence: 1.0
+rule: (618424, 1073372) ==> (26475, 953360), confidence: 1.0
+rule: (953360, 1073372) ==> (26475, 618424), confidence: 1.0
+rule: (26475, 618424, 953360) ==> (1073372,), confidence: 1.0
+rule: (26475, 618424, 1073372) ==> (953360,), confidence: 1.0
+rule: (26475, 953360, 1073372) ==> (618424,), confidence: 1.0
+rule: (618424, 953360, 1073372) ==> (26475,), confidence: 1.0
+rule: (159310,) ==> (26475, 618424, 1073372), confidence: 0.6
+rule: (618424,) ==> (26475, 159310, 1073372), confidence: 0.75
+rule: (1073372,) ==> (26475, 159310, 618424), confidence: 1.0
+rule: (26475, 159310) ==> (618424, 1073372), confidence: 0.75
+rule: (26475, 618424) ==> (159310, 1073372), confidence: 1.0
+rule: (26475, 1073372) ==> (159310, 618424), confidence: 1.0
+rule: (159310, 618424) ==> (26475, 1073372), confidence: 1.0
+rule: (159310, 1073372) ==> (26475, 618424), confidence: 1.0
+rule: (618424, 1073372) ==> (26475, 159310), confidence: 1.0
+rule: (26475, 159310, 618424) ==> (1073372,), confidence: 1.0
+rule: (26475, 159310, 1073372) ==> (618424,), confidence: 1.0
+rule: (26475, 618424, 1073372) ==> (159310,), confidence: 1.0
+rule: (159310, 618424, 1073372) ==> (26475,), confidence: 1.0
+rule: (831452,) ==> (79558, 1019368, 1073970), confidence: 0.625
+rule: (79558, 831452) ==> (1019368, 1073970), confidence: 0.7692307692307693
+rule: (79558, 1019368) ==> (831452, 1073970), confidence: 0.9090909090909091
+rule: (79558, 1073970) ==> (831452, 1019368), confidence: 0.625
+rule: (831452, 1019368) ==> (79558, 1073970), confidence: 0.9090909090909091
+rule: (831452, 1073970) ==> (79558, 1019368), confidence: 0.6666666666666666
+rule: (1019368, 1073970) ==> (79558, 831452), confidence: 0.8333333333333334
+rule: (79558, 831452, 1019368) ==> (1073970,), confidence: 1.0
+rule: (79558, 831452, 1073970) ==> (1019368,), confidence: 0.7692307692307693
+rule: (79558, 1019368, 1073970) ==> (831452,), confidence: 1.0
+rule: (831452, 1019368, 1073970) ==> (79558,), confidence: 0.9090909090909091
+rule: (159310,) ==> (26475, 953360, 1073372), confidence: 0.6
+rule: (953360,) ==> (26475, 159310, 1073372), confidence: 0.75
+rule: (1073372,) ==> (26475, 159310, 953360), confidence: 1.0
+rule: (26475, 159310) ==> (953360, 1073372), confidence: 0.75
+rule: (26475, 953360) ==> (159310, 1073372), confidence: 0.75
+rule: (26475, 1073372) ==> (159310, 953360), confidence: 1.0
+rule: (159310, 953360) ==> (26475, 1073372), confidence: 0.75
+rule: (159310, 1073372) ==> (26475, 953360), confidence: 1.0
+rule: (953360, 1073372) ==> (26475, 159310), confidence: 1.0
+rule: (26475, 159310, 953360) ==> (1073372,), confidence: 0.75
+rule: (26475, 159310, 1073372) ==> (953360,), confidence: 1.0
+rule: (26475, 953360, 1073372) ==> (159310,), confidence: 1.0
+rule: (159310, 953360, 1073372) ==> (26475,), confidence: 1.0
+rule: (662931,) ==> (784251, 886058, 974641), confidence: 1.0
+rule: (784251,) ==> (662931, 886058, 974641), confidence: 1.0
+rule: (886058,) ==> (662931, 784251, 974641), confidence: 0.6
+rule: (662931, 784251) ==> (886058, 974641), confidence: 1.0
+rule: (662931, 886058) ==> (784251, 974641), confidence: 1.0
+rule: (662931, 974641) ==> (784251, 886058), confidence: 1.0
+rule: (784251, 886058) ==> (662931, 974641), confidence: 1.0
+rule: (784251, 974641) ==> (662931, 886058), confidence: 1.0
+rule: (886058, 974641) ==> (662931, 784251), confidence: 0.75
+rule: (662931, 784251, 886058) ==> (974641,), confidence: 1.0
+rule: (662931, 784251, 974641) ==> (886058,), confidence: 1.0
+rule: (662931, 886058, 974641) ==> (784251,), confidence: 1.0
+rule: (784251, 886058, 974641) ==> (662931,), confidence: 1.0
+rule: (163543,) ==> (979024, 1038303, 1071903), confidence: 1.0
+rule: (979024,) ==> (163543, 1038303, 1071903), confidence: 0.6666666666666666
+rule: (1038303,) ==> (163543, 979024, 1071903), confidence: 1.0
+rule: (1071903,) ==> (163543, 979024, 1038303), confidence: 0.6666666666666666
+rule: (163543, 979024) ==> (1038303, 1071903), confidence: 1.0
+rule: (163543, 1038303) ==> (979024, 1071903), confidence: 1.0
+rule: (163543, 1071903) ==> (979024, 1038303), confidence: 1.0
+rule: (979024, 1038303) ==> (163543, 1071903), confidence: 1.0
+rule: (979024, 1071903) ==> (163543, 1038303), confidence: 1.0
+rule: (1038303, 1071903) ==> (163543, 979024), confidence: 1.0
+rule: (163543, 979024, 1038303) ==> (1071903,), confidence: 1.0
+rule: (163543, 979024, 1071903) ==> (1038303,), confidence: 1.0
+rule: (163543, 1038303, 1071903) ==> (979024,), confidence: 1.0
+rule: (979024, 1038303, 1071903) ==> (163543,), confidence: 1.0
+rule: (159310,) ==> (618424, 953360, 1073372), confidence: 0.6
+rule: (618424,) ==> (159310, 953360, 1073372), confidence: 0.75
+rule: (953360,) ==> (159310, 618424, 1073372), confidence: 0.75
+rule: (1073372,) ==> (159310, 618424, 953360), confidence: 1.0
+rule: (159310, 618424) ==> (953360, 1073372), confidence: 1.0
+rule: (159310, 953360) ==> (618424, 1073372), confidence: 0.75
+rule: (159310, 1073372) ==> (618424, 953360), confidence: 1.0
+rule: (618424, 953360) ==> (159310, 1073372), confidence: 1.0
+rule: (618424, 1073372) ==> (159310, 953360), confidence: 1.0
+rule: (953360, 1073372) ==> (159310, 618424), confidence: 1.0
+rule: (159310, 618424, 953360) ==> (1073372,), confidence: 1.0
+rule: (159310, 618424, 1073372) ==> (953360,), confidence: 1.0
+rule: (159310, 953360, 1073372) ==> (618424,), confidence: 1.0
+rule: (618424, 953360, 1073372) ==> (159310,), confidence: 1.0
+rule: (159310,) ==> (618424, 953360), confidence: 0.6
+rule: (618424,) ==> (159310, 953360), confidence: 0.75
+rule: (953360,) ==> (159310, 618424), confidence: 0.75
+rule: (159310, 618424) ==> (953360,), confidence: 1.0
+rule: (159310, 953360) ==> (618424,), confidence: 0.75
+rule: (618424, 953360) ==> (159310,), confidence: 1.0
+rule: (159310,) ==> (26475, 618424), confidence: 0.6
+rule: (618424,) ==> (26475, 159310), confidence: 0.75
+rule: (26475, 159310) ==> (618424,), confidence: 0.75
+rule: (26475, 618424) ==> (159310,), confidence: 1.0
+rule: (159310, 618424) ==> (26475,), confidence: 1.0
+rule: (618424,) ==> (953360, 1073372), confidence: 0.75
+rule: (953360,) ==> (618424, 1073372), confidence: 0.75
+rule: (1073372,) ==> (618424, 953360), confidence: 1.0
+rule: (618424, 953360) ==> (1073372,), confidence: 1.0
+rule: (618424, 1073372) ==> (953360,), confidence: 1.0
+rule: (953360, 1073372) ==> (618424,), confidence: 1.0
+rule: (159310,) ==> (26475, 1073372), confidence: 0.6
+rule: (1073372,) ==> (26475, 159310), confidence: 1.0
+rule: (26475, 159310) ==> (1073372,), confidence: 0.75
+rule: (26475, 1073372) ==> (159310,), confidence: 1.0
+rule: (159310, 1073372) ==> (26475,), confidence: 1.0
+rule: (79558, 1019368) ==> (1073970,), confidence: 0.9090909090909091
+rule: (79558, 1073970) ==> (1019368,), confidence: 0.625
+rule: (1019368, 1073970) ==> (79558,), confidence: 0.8333333333333334
+rule: (953360,) ==> (26475, 1073372), confidence: 0.75
+rule: (1073372,) ==> (26475, 953360), confidence: 1.0
+rule: (26475, 953360) ==> (1073372,), confidence: 0.75
+rule: (26475, 1073372) ==> (953360,), confidence: 1.0
+rule: (953360, 1073372) ==> (26475,), confidence: 1.0
+rule: (618424,) ==> (26475, 953360), confidence: 0.75
+rule: (953360,) ==> (26475, 618424), confidence: 0.75
+rule: (26475, 618424) ==> (953360,), confidence: 1.0
+rule: (26475, 953360) ==> (618424,), confidence: 0.75
+rule: (618424, 953360) ==> (26475,), confidence: 1.0
+rule: (163543,) ==> (979024, 1038303), confidence: 1.0
+rule: (979024,) ==> (163543, 1038303), confidence: 0.6666666666666666
+rule: (1038303,) ==> (163543, 979024), confidence: 1.0
+rule: (163543, 979024) ==> (1038303,), confidence: 1.0
+rule: (163543, 1038303) ==> (979024,), confidence: 1.0
+rule: (979024, 1038303) ==> (163543,), confidence: 1.0
+rule: (37654,) ==> (855939, 1107574), confidence: 1.0
+rule: (37654, 855939) ==> (1107574,), confidence: 1.0
+rule: (37654, 1107574) ==> (855939,), confidence: 1.0
+rule: (855939, 1107574) ==> (37654,), confidence: 0.75
+rule: (831452,) ==> (1019368, 1073970), confidence: 0.6875
+rule: (1019368,) ==> (831452, 1073970), confidence: 0.6470588235294118
+rule: (831452, 1019368) ==> (1073970,), confidence: 1.0
+rule: (831452, 1073970) ==> (1019368,), confidence: 0.7333333333333333
+rule: (1019368, 1073970) ==> (831452,), confidence: 0.9166666666666666
+rule: (831452,) ==> (79558, 1019368), confidence: 0.625
+rule: (79558, 831452) ==> (1019368,), confidence: 0.7692307692307693
+rule: (79558, 1019368) ==> (831452,), confidence: 0.9090909090909091
+rule: (831452, 1019368) ==> (79558,), confidence: 0.9090909090909091
+rule: (662931,) ==> (886058, 974641), confidence: 1.0
+rule: (886058,) ==> (662931, 974641), confidence: 0.6
+rule: (662931, 886058) ==> (974641,), confidence: 1.0
+rule: (662931, 974641) ==> (886058,), confidence: 1.0
+rule: (886058, 974641) ==> (662931,), confidence: 0.75
+rule: (79558,) ==> (831452, 1073970), confidence: 0.65
+rule: (831452,) ==> (79558, 1073970), confidence: 0.8125
+rule: (79558, 831452) ==> (1073970,), confidence: 1.0
+rule: (79558, 1073970) ==> (831452,), confidence: 0.8125
+rule: (831452, 1073970) ==> (79558,), confidence: 0.8666666666666667
+rule: (163543,) ==> (1038303, 1071903), confidence: 1.0
+rule: (1038303,) ==> (163543, 1071903), confidence: 1.0
+rule: (1071903,) ==> (163543, 1038303), confidence: 0.6666666666666666
+rule: (163543, 1038303) ==> (1071903,), confidence: 1.0
+rule: (163543, 1071903) ==> (1038303,), confidence: 1.0
+rule: (1038303, 1071903) ==> (163543,), confidence: 1.0
+rule: (159310,) ==> (618424, 1073372), confidence: 0.6
+rule: (618424,) ==> (159310, 1073372), confidence: 0.75
+rule: (1073372,) ==> (159310, 618424), confidence: 1.0
+rule: (159310, 618424) ==> (1073372,), confidence: 1.0
+rule: (159310, 1073372) ==> (618424,), confidence: 1.0
+rule: (618424, 1073372) ==> (159310,), confidence: 1.0
+rule: (61356,) ==> (810450, 845841), confidence: 0.75
+rule: (810450,) ==> (61356, 845841), confidence: 1.0
+rule: (61356, 810450) ==> (845841,), confidence: 1.0
+rule: (61356, 845841) ==> (810450,), confidence: 1.0
+rule: (810450, 845841) ==> (61356,), confidence: 1.0
+rule: (784251,) ==> (886058, 974641), confidence: 1.0
+rule: (886058,) ==> (784251, 974641), confidence: 0.6
+rule: (784251, 886058) ==> (974641,), confidence: 1.0
+rule: (784251, 974641) ==> (886058,), confidence: 1.0
+rule: (886058, 974641) ==> (784251,), confidence: 0.75
+rule: (662931,) ==> (784251, 886058), confidence: 1.0
+rule: (784251,) ==> (662931, 886058), confidence: 1.0
+rule: (886058,) ==> (662931, 784251), confidence: 0.6
+rule: (662931, 784251) ==> (886058,), confidence: 1.0
+rule: (662931, 886058) ==> (784251,), confidence: 1.0
+rule: (784251, 886058) ==> (662931,), confidence: 1.0
+rule: (159310,) ==> (26475, 953360), confidence: 0.8
+rule: (953360,) ==> (26475, 159310), confidence: 1.0
+rule: (26475, 159310) ==> (953360,), confidence: 1.0
+rule: (26475, 953360) ==> (159310,), confidence: 1.0
+rule: (159310, 953360) ==> (26475,), confidence: 1.0
+rule: (949127,) ==> (607911, 1110317), confidence: 0.75
+rule: (1110317,) ==> (607911, 949127), confidence: 1.0
+rule: (607911, 949127) ==> (1110317,), confidence: 1.0
+rule: (607911, 1110317) ==> (949127,), confidence: 1.0
+rule: (949127, 1110317) ==> (607911,), confidence: 1.0
+rule: (618424,) ==> (26475, 1073372), confidence: 0.75
+rule: (1073372,) ==> (26475, 618424), confidence: 1.0
+rule: (26475, 618424) ==> (1073372,), confidence: 1.0
+rule: (26475, 1073372) ==> (618424,), confidence: 1.0
+rule: (618424, 1073372) ==> (26475,), confidence: 1.0
+rule: (979024,) ==> (1038303, 1071903), confidence: 0.6666666666666666
+rule: (1038303,) ==> (979024, 1071903), confidence: 1.0
+rule: (1071903,) ==> (979024, 1038303), confidence: 0.6666666666666666
+rule: (979024, 1038303) ==> (1071903,), confidence: 1.0
+rule: (979024, 1071903) ==> (1038303,), confidence: 1.0
+rule: (1038303, 1071903) ==> (979024,), confidence: 1.0
+rule: (163543,) ==> (979024, 1071903), confidence: 1.0
+rule: (979024,) ==> (163543, 1071903), confidence: 0.6666666666666666
+rule: (1071903,) ==> (163543, 979024), confidence: 0.6666666666666666
+rule: (163543, 979024) ==> (1071903,), confidence: 1.0
+rule: (163543, 1071903) ==> (979024,), confidence: 1.0
+rule: (979024, 1071903) ==> (163543,), confidence: 1.0
+rule: (662931,) ==> (784251, 974641), confidence: 1.0
+rule: (784251,) ==> (662931, 974641), confidence: 1.0
+rule: (662931, 784251) ==> (974641,), confidence: 1.0
+rule: (662931, 974641) ==> (784251,), confidence: 1.0
+rule: (784251, 974641) ==> (662931,), confidence: 1.0
+rule: (6587,) ==> (119545, 665369), confidence: 1.0
+rule: (119545,) ==> (6587, 665369), confidence: 0.6666666666666666
+rule: (665369,) ==> (6587, 119545), confidence: 1.0
+rule: (6587, 119545) ==> (665369,), confidence: 1.0
+rule: (6587, 665369) ==> (119545,), confidence: 1.0
+rule: (119545, 665369) ==> (6587,), confidence: 1.0
+rule: (159310,) ==> (953360, 1073372), confidence: 0.6
+rule: (953360,) ==> (159310, 1073372), confidence: 0.75
+rule: (1073372,) ==> (159310, 953360), confidence: 1.0
+rule: (159310, 953360) ==> (1073372,), confidence: 0.75
+rule: (159310, 1073372) ==> (953360,), confidence: 1.0
+rule: (953360, 1073372) ==> (159310,), confidence: 1.0
+rule: (266291,) ==> (381224,), confidence: 1.0
+rule: (381224,) ==> (266291,), confidence: 1.0
+rule: (163543,) ==> (1038303,), confidence: 1.0
+rule: (1038303,) ==> (163543,), confidence: 1.0
+rule: (784251,) ==> (974641,), confidence: 1.0
+rule: (517942,) ==> (15496,), confidence: 1.0
+rule: (618424,) ==> (953360,), confidence: 0.75
+rule: (953360,) ==> (618424,), confidence: 0.75
+rule: (810450,) ==> (845841,), confidence: 1.0
+rule: (949127,) ==> (607911,), confidence: 0.75
+rule: (930037,) ==> (104293,), confidence: 0.75
+rule: (327897,) ==> (282032,), confidence: 0.6
+rule: (593323,) ==> (1056228,), confidence: 1.0
+rule: (300754,) ==> (1003998,), confidence: 0.75
+rule: (853741,) ==> (896170,), confidence: 1.0
+rule: (831452,) ==> (1073970,), confidence: 0.9375
+rule: (375903,) ==> (515410,), confidence: 0.6
+rule: (515410,) ==> (375903,), confidence: 0.6
+rule: (508266,) ==> (52817,), confidence: 1.0
+rule: (515410,) ==> (969067,), confidence: 0.6
+rule: (969067,) ==> (515410,), confidence: 1.0
+rule: (6587,) ==> (119545,), confidence: 1.0
+rule: (119545,) ==> (6587,), confidence: 0.6666666666666666
+rule: (613942,) ==> (909331,), confidence: 1.0
+rule: (458605,) ==> (887889,), confidence: 0.9090909090909091
+rule: (784251,) ==> (886058,), confidence: 1.0
+rule: (886058,) ==> (784251,), confidence: 0.6
+rule: (185591,) ==> (950825,), confidence: 0.8333333333333334
+rule: (950825,) ==> (185591,), confidence: 0.625
+rule: (159310,) ==> (26475,), confidence: 0.8
+rule: (577763,) ==> (12477,), confidence: 0.6
+rule: (1038303,) ==> (1071903,), confidence: 1.0
+rule: (1071903,) ==> (1038303,), confidence: 0.6666666666666666
+rule: (575966,) ==> (197218,), confidence: 0.6
+rule: (221934,) ==> (525842,), confidence: 0.6
+rule: (525842,) ==> (221934,), confidence: 0.6
+rule: (163543,) ==> (979024,), confidence: 1.0
+rule: (979024,) ==> (163543,), confidence: 0.6666666666666666
+rule: (1019368,) ==> (79558,), confidence: 0.6470588235294118
+rule: (37654,) ==> (1107574,), confidence: 1.0
+rule: (423331,) ==> (1077697,), confidence: 1.0
+rule: (662931,) ==> (784251,), confidence: 1.0
+rule: (784251,) ==> (662931,), confidence: 1.0
+rule: (25906,) ==> (185585,), confidence: 0.75
+rule: (185585,) ==> (25906,), confidence: 0.75
+rule: (400945,) ==> (745251,), confidence: 1.0
+rule: (761073,) ==> (1056652,), confidence: 0.7142857142857143
+rule: (1056652,) ==> (761073,), confidence: 0.625
+rule: (139834,) ==> (536930,), confidence: 0.8333333333333334
+rule: (536930,) ==> (139834,), confidence: 0.8333333333333334
+rule: (304998,) ==> (554408,), confidence: 1.0
+rule: (554408,) ==> (304998,), confidence: 0.6
+rule: (510724,) ==> (524650,), confidence: 1.0
+rule: (524650,) ==> (510724,), confidence: 1.0
+rule: (79558,) ==> (1073970,), confidence: 0.8
+rule: (979024,) ==> (1038303,), confidence: 0.6666666666666666
+rule: (1038303,) ==> (979024,), confidence: 1.0
+rule: (885357,) ==> (745251,), confidence: 1.0
+rule: (292440,) ==> (431440,), confidence: 0.7142857142857143
+rule: (431440,) ==> (292440,), confidence: 0.625
+rule: (803949,) ==> (948890,), confidence: 1.0
+rule: (948890,) ==> (803949,), confidence: 0.6
+rule: (159310,) ==> (618424,), confidence: 0.6
+rule: (618424,) ==> (159310,), confidence: 0.75
+rule: (831452,) ==> (1019368,), confidence: 0.6875
+rule: (1019368,) ==> (831452,), confidence: 0.6470588235294118
+rule: (246150,) ==> (1077268,), confidence: 1.0
+rule: (602660,) ==> (210865,), confidence: 1.0
+rule: (375903,) ==> (915181,), confidence: 0.8
+rule: (915181,) ==> (375903,), confidence: 1.0
+rule: (340375,) ==> (796486,), confidence: 1.0
+rule: (444401,) ==> (573019,), confidence: 0.8
+rule: (556624,) ==> (167274,), confidence: 1.0
+rule: (832765,) ==> (865616,), confidence: 1.0
+rule: (865616,) ==> (832765,), confidence: 1.0
+rule: (79558,) ==> (831452,), confidence: 0.65
+rule: (831452,) ==> (79558,), confidence: 0.8125
+rule: (95474,) ==> (595651,), confidence: 0.75
+rule: (595651,) ==> (95474,), confidence: 1.0
+rule: (886058,) ==> (974641,), confidence: 0.8
+rule: (974641,) ==> (886058,), confidence: 0.6666666666666666
+rule: (159310,) ==> (1073372,), confidence: 0.6
+rule: (1073372,) ==> (159310,), confidence: 1.0
+rule: (570120,) ==> (1052897,), confidence: 1.0
+rule: (1052897,) ==> (570120,), confidence: 0.6666666666666666
+rule: (533703,) ==> (601243,), confidence: 1.0
+rule: (844919,) ==> (52215,), confidence: 1.0
+rule: (995048,) ==> (855939,), confidence: 1.0
+rule: (1006837,) ==> (1013450,), confidence: 1.0
+rule: (88402,) ==> (156338,), confidence: 0.6666666666666666
+rule: (758699,) ==> (951634,), confidence: 0.6
+rule: (489913,) ==> (200455,), confidence: 0.6
+rule: (489180,) ==> (561733,), confidence: 0.75
+rule: (114456,) ==> (202112,), confidence: 1.0
+rule: (88020,) ==> (268153,), confidence: 1.0
+rule: (159310,) ==> (953360,), confidence: 0.8
+rule: (953360,) ==> (159310,), confidence: 1.0
+rule: (618424,) ==> (1073372,), confidence: 0.75
+rule: (1073372,) ==> (618424,), confidence: 1.0
+rule: (247612,) ==> (300407,), confidence: 1.0
+rule: (1110317,) ==> (607911,), confidence: 1.0
+rule: (504603,) ==> (547532,), confidence: 1.0
+rule: (119545,) ==> (665369,), confidence: 0.6666666666666666
+rule: (665369,) ==> (119545,), confidence: 1.0
+rule: (855108,) ==> (340600,), confidence: 1.0
+rule: (61356,) ==> (810450,), confidence: 0.75
+rule: (810450,) ==> (61356,), confidence: 1.0
+rule: (1073372,) ==> (26475,), confidence: 1.0
+rule: (1019368,) ==> (1073970,), confidence: 0.7058823529411765
+rule: (80565,) ==> (654034,), confidence: 0.75
+rule: (289394,) ==> (282032,), confidence: 1.0
+rule: (80260,) ==> (475179,), confidence: 0.6
+rule: (475179,) ==> (80260,), confidence: 0.6
+rule: (37654,) ==> (855939,), confidence: 1.0
+rule: (672729,) ==> (809866,), confidence: 0.75
+rule: (809866,) ==> (672729,), confidence: 0.75
+rule: (949127,) ==> (1110317,), confidence: 0.75
+rule: (1110317,) ==> (949127,), confidence: 1.0
+rule: (163543,) ==> (1071903,), confidence: 1.0
+rule: (1071903,) ==> (163543,), confidence: 0.6666666666666666
+rule: (548263,) ==> (408458,), confidence: 0.7142857142857143
+rule: (989699,) ==> (1011562,), confidence: 0.75
+rule: (6587,) ==> (665369,), confidence: 1.0
+rule: (665369,) ==> (6587,), confidence: 1.0
+rule: (953360,) ==> (1073372,), confidence: 0.75
+rule: (1073372,) ==> (953360,), confidence: 1.0
+rule: (61356,) ==> (845841,), confidence: 0.75
+rule: (1013043,) ==> (218211,), confidence: 1.0
+rule: (618424,) ==> (26475,), confidence: 0.75
+rule: (662931,) ==> (886058,), confidence: 1.0
+rule: (886058,) ==> (662931,), confidence: 0.6
+rule: (606774,) ==> (1111969,), confidence: 0.6
+rule: (547903,) ==> (1003169,), confidence: 1.0
+rule: (1003169,) ==> (547903,), confidence: 0.75
+rule: (953360,) ==> (26475,), confidence: 1.0
+rule: (672543,) ==> (52215,), confidence: 1.0
+rule: (82058,) ==> (408458,), confidence: 1.0
+rule: (662931,) ==> (974641,), confidence: 1.0
+rule: (847383,) ==> (294679,), confidence: 1.0
+rule: (21993,) ==> (493372,), confidence: 0.6
+rule: (1086725,) ==> (613523,), confidence: 0.75
+rule: (868626,) ==> (15496,), confidence: 1.0
+rule: (33976,) ==> (118742,), confidence: 1.0
+rule: (200281,) ==> (168779,), confidence: 1.0
+rule: (979024,) ==> (1071903,), confidence: 0.6666666666666666
+rule: (1071903,) ==> (979024,), confidence: 0.6666666666666666
+rule: (738862,) ==> (1046248,), confidence: 1.0
