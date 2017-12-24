@@ -80,8 +80,13 @@ class SOM(object):
             self._training_op = tf.assign(self._weight_vectors, new_weight_op)
 
             # update_heat_rate=tf.stack([] for i in range(output_size))
-            new_heat = tf.multiply(tf.add(learning_rate_op, np.ones([output_size])),
-                                   self._heat)
+            heat_rate = tf.to_float(tf.div(1, self._n_iterations))
+            heat_alpha = tf.multiply(learning_rate, heat_rate)
+            heat_sigma = tf.multiply(influence_radius, heat_rate)
+            heat_neighbourhood = tf.exp(tf.negative(tf.sqrt(tf.div(tf.cast(
+                bmu_distance_squares, 'float32'), tf.pow(heat_sigma, 2)))))
+            heat_rate = tf.multiply(heat_alpha, heat_neighbourhood)
+            new_heat = tf.multiply(tf.add(heat_rate, np.ones([output_size])), self._heat)
             self._update_heat_op = tf.assign(self._heat, new_heat)
 
             self._sess = tf.Session()
@@ -124,13 +129,15 @@ class SOM(object):
             self.train_step(input_vectors, iter_no)
         self._trained = True
 
-    def get_heat_vec(self):
+    def get_heat_vec(self, input_vectors):
         """
         Returns a list of 'length' lists, with each inner list containing the 'width' corresponding centroid
         locations as 1-D NumPy arrays.
         """
         if not self._trained:
             raise ValueError('SOM not trained yet')
+        for vector in input_vectors:
+            self._sess.run(self._heat, feed_dict={self._input_vector: vector})
         heat = list(self._sess.run(self._heat))
         v_min_val = int(np.min(heat))
         v_max_val = int(np.max(heat) + 1)
@@ -197,7 +204,7 @@ if __name__ == '__main__':
     opt_parser.add_option('-b', '--batch_size',
                           dest='batch_size',
                           help='batch size',
-                          default=1024,
+                          default=2048,
                           type='int')
     (options, args) = opt_parser.parse_args()
 
@@ -207,7 +214,7 @@ if __name__ == '__main__':
     som.train(user_behavior)
 
     # Get output grid
-    heat_vec, v_min, v_max = som.get_heat_vec()
+    heat_vec, v_min, v_max = som.get_heat_vec(user_behavior)
 
     # Plot
     fig = plt.figure(facecolor='w')
