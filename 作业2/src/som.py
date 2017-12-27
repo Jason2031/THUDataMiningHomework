@@ -5,6 +5,7 @@ from matplotlib import cm as cm
 import pandas as pd
 from optparse import OptionParser
 import os
+import time
 
 
 class SOM(object):
@@ -48,7 +49,7 @@ class SOM(object):
             # value
             bmu_index = tf.argmin(tf.sqrt(tf.reduce_sum(
                 tf.pow(tf.subtract(self._weight_vectors, tf.stack(
-                    [self._input_vector for i in range(output_width * output_length)])), 2), 1)), 0)
+                    [self._input_vector for i in range(output_size)])), 2), 1)), 0)
 
             # This will extract the location of the BMU based on the BMU's index
             slice_input = tf.pad(tf.reshape(bmu_index, [1]),
@@ -64,7 +65,7 @@ class SOM(object):
             # Construct the op that will generate a vector with learning rates for all neurons, based on iteration
             # number and location wrt BMU.
             bmu_distance_squares = tf.reduce_sum(tf.pow(tf.subtract(
-                self._location_vectors, tf.stack([bmu_loc for i in range(output_width * output_length)])), 2), 1)
+                self._location_vectors, tf.stack([bmu_loc for i in range(output_size)])), 2), 1)
             neighbourhood_func = tf.exp(tf.negative(tf.sqrt(tf.div(tf.cast(
                 bmu_distance_squares, 'float32'), tf.pow(_sigma_op, 2)))))
             learning_rate_op = tf.multiply(_alpha_op, neighbourhood_func)
@@ -75,12 +76,11 @@ class SOM(object):
                 [tf.tile(tf.slice(learning_rate_op, np.array([i]), np.array([1])), [input_dimension]) for i in
                  range(output_size)])
             weight_delta = tf.multiply(learning_rate_multiplier, tf.subtract(tf.stack(
-                [self._input_vector for i in range(output_width * output_length)]), self._weight_vectors))
+                [self._input_vector for i in range(output_size)]), self._weight_vectors))
             new_weight_op = tf.add(self._weight_vectors, weight_delta)
             self._training_op = tf.assign(self._weight_vectors, new_weight_op)
 
-            # update_heat_rate=tf.stack([] for i in range(output_size))
-            heat_rate = tf.to_float(tf.div(1, self._n_iterations))
+            heat_rate = tf.to_float(tf.div(1.0, self._n_iterations))
             heat_alpha = tf.multiply(learning_rate, heat_rate)
             heat_sigma = tf.multiply(influence_radius, heat_rate)
             heat_neighbourhood = tf.exp(tf.negative(tf.sqrt(tf.div(tf.cast(
@@ -111,7 +111,7 @@ class SOM(object):
         :return:
         """
         for input_vector in input_vectors:
-            self._sess.run([self._training_op, self._update_heat_op],
+            self._sess.run(self._training_op,
                            feed_dict={self._input_vector: input_vector,
                                       self._input_iteration_number: iter_no})
 
@@ -125,8 +125,9 @@ class SOM(object):
         print('Training begins...')
         # Training iterations
         for iter_no in range(self._n_iterations):
-            print('Iter #{}/{}'.format(iter_no + 1, self._n_iterations))
+            start = time.time()
             self.train_step(input_vectors, iter_no)
+            print('Iter #{}/{}, train time:{}s'.format(iter_no + 1, self._n_iterations, time.time() - start))
         self._trained = True
 
     def get_heat_vec(self, input_vectors):
@@ -137,20 +138,32 @@ class SOM(object):
         if not self._trained:
             raise ValueError('SOM not trained yet')
         for vector in input_vectors:
-            self._sess.run(self._heat, feed_dict={self._input_vector: vector})
+            self._sess.run(self._update_heat_op, feed_dict={self._input_vector: vector})
         heat = list(self._sess.run(self._heat))
-        v_min_val = int(np.min(heat))
-        v_max_val = int(np.max(heat) + 1)
+        # normalize the heat list
+        max_val = np.nanmax(heat)
+        heat = [1000 * x / max_val for x in heat]
+        v_min_val = int(np.nanmin(heat))
+        v_max_val = int(np.nanmax(heat) + 1)
         heat = np.reshape(heat, [self._output_width, self._output_length])
         return heat, v_min_val, v_max_val
+
+    def save_to_file(self, file_name):
+        weight_vector = self._sess.run(self._weight_vectors)
+        np.save(file_name, weight_vector)
+
+    def load_from_file(self, file_name):
+        if not os.path.exists(file_name):
+            raise FileNotFoundError('No weight_vectors file!')
+        self._weight_vectors = tf.Variable(np.load(file_name))
+        self._trained = True
 
 
 def construct_user_behavior_array(user_behavior_file, size):
     if not os.path.exists(user_behavior_file):
         raise FileNotFoundError('No user behavior file found!')
+    print('Constructing user behavior array...')
     df = pd.read_csv(user_behavior_file)
-    df = df.sample(frac=1)
-    df = df[:size]
     df = df.filter(items=['user_id', 'item_id', 'action_type'])
     df['user_id'] = df['user_id'].astype(int)
     df['item_id'] = df['item_id'].astype(int)
@@ -158,26 +171,33 @@ def construct_user_behavior_array(user_behavior_file, size):
     df['action_type'] += 1
     # normalize
     df['action_type'] /= 4.0
+    # shuffle
+    df.sample(frac=1)
     # construct a very sparse matrix (user_count * item_count)
-    users = set(df['user_id'])
-    items = set(df['item_id'])
+    groups = df.groupby(['user_id'])
     user_map = {}
     item_map = {}
-    output = np.zeros([len(users), len(items)])
-    for index, row in df.iterrows():
-        if row['user_id'] not in user_map.keys():
-            user_map[row['user_id']] = len(user_map)
-        if row['item_id'] not in item_map.keys():
-            item_map[row['item_id']] = len(item_map)
-        output[user_map[row['user_id']]][item_map[row['item_id']]] = row['action_type']
-    return output
+    output = np.zeros([min(len(set(df['user_id'])), size), len(set(df['item_id']))])
+    for _, items in groups:
+        if len(user_map) >= size:
+            break
+        user_id = items['user_id'].values[0]
+        if user_id not in user_map.keys():
+            user_map[user_id] = len(user_map)
+        item_list = items['item_id'].values
+        action_list = items['action_type'].values
+        for i in range(len(item_list)):
+            if item_list[i] not in item_map.keys():
+                item_map[item_list[i]] = len(item_map)
+            output[user_map[user_id]][item_map[item_list[i]]] = action_list[i]
+        print('User behaviour array #{}/{}'.format(len(user_map), size))
+    return output[:, :len(item_map)]
 
 
-def save_result(plot, destination='result/som_result.jpg'):
+def save_result(plot, destination='result/som_result.png'):
     if not os.path.exists('result'):
         os.makedirs('result')
     plot.savefig(destination)
-    pass
 
 
 if __name__ == '__main__':
@@ -199,19 +219,31 @@ if __name__ == '__main__':
     opt_parser.add_option('-i', '--iteration_count',
                           dest='iteration_count',
                           help='iteration count',
-                          default=400,
+                          default=10,
                           type='int')
     opt_parser.add_option('-b', '--batch_size',
                           dest='batch_size',
                           help='batch size',
-                          default=2048,
+                          default=128,
                           type='int')
     (options, args) = opt_parser.parse_args()
 
-    user_behavior = construct_user_behavior_array(options.input, options.batch_size)
+    if os.path.exists('data_set/user_behavior.npy'):
+        user_behavior = np.load('data_set/user_behavior.npy')
+        print('User behavior data loaded!')
+    else:
+        user_behavior = construct_user_behavior_array(options.input, options.batch_size)
+        np.save('data_set/user_behavior.npy', user_behavior)
+        print('User behavior data saved!')
 
     som = SOM(options.som_width, options.som_length, user_behavior[0].size, options.iteration_count)
-    som.train(user_behavior)
+    if os.path.exists('data_set/weight_vectors.npy'):
+        som.load_from_file('data_set/weight_vectors.npy')
+        print('SOM weight vectors loaded!')
+    else:
+        som.train(user_behavior)
+        som.save_to_file('data_set/weight_vectors.npy')
+        print('SOM weight vectors saved!')
 
     # Get output grid
     heat_vec, v_min, v_max = som.get_heat_vec(user_behavior)
