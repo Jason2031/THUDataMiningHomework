@@ -35,7 +35,7 @@ class SOM(object):
         output_size = output_width * output_length
 
         with tf.Graph().as_default():
-            self._weight_vectors = tf.Variable(tf.random_normal([output_size, input_dimension]))
+            self._weight_vectors = tf.Variable(tf.random_uniform([output_size, input_dimension], minval=0, maxval=1))
 
             self._location_vectors = tf.constant(np.array(list(self._neuron_locations(output_width, output_length))))
 
@@ -219,12 +219,12 @@ if __name__ == '__main__':
     opt_parser.add_option('-i', '--iteration_count',
                           dest='iteration_count',
                           help='iteration count',
-                          default=10,
+                          default=20,
                           type='int')
     opt_parser.add_option('-b', '--batch_size',
                           dest='batch_size',
                           help='batch size',
-                          default=128,
+                          default=512,
                           type='int')
     (options, args) = opt_parser.parse_args()
 
