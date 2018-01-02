@@ -37,3 +37,8 @@ src/
   1. python src/apriori.py
 * som.py
   1. python src/som.py
+* cluster.py
+  1. python src/cluster.py
+* rf.py
+  1. python src/panda.py
+  2. python rf.py
